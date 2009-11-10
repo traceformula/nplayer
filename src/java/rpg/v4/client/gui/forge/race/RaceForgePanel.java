@@ -63,6 +63,7 @@ public class RaceForgePanel extends AbstractForgePanel
         race.setName("");
         nameTextField.setText("");
         modifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
+        super.actionPerformed(null);
     }
 
     @Override

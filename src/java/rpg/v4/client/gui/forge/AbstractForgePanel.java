@@ -8,6 +8,7 @@ import rpg.v4.client.gui.sidepanel.SidePanel;
 import rpg.v4.client.gui.sidepanel.SidePanelAssociate;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.listener.AncestorChangeListener;
+import rpg.v4.client.gui.control.information.InformationBlock;
 import rpg.v4.middleware.util.collection.ObservableArrayList;
 
 import javax.swing.*;
@@ -16,6 +17,7 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 /**
  * To change this template use File | Settings | File Templates.
@@ -139,4 +141,9 @@ public abstract class AbstractForgePanel extends JTransparentPanel implements Ac
     }
 
     protected abstract void setNewName(String s);
+
+    public void actionPerformed(ActionEvent actionEvent)
+    {
+        InformationBlock.instance.setInformationString("Please restart nPlayer after you have finished with the forges. It is safer.");
+    }
 }

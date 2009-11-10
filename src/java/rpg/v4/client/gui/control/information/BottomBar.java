@@ -13,7 +13,7 @@ public class BottomBar extends JTransparentPanel
 {
     public BottomBar(GameMasterFrame gameMasterFrame)
     {
-        add(new InformationBlock(), BorderLayout.CENTER);
+        add(InformationBlock.instance, BorderLayout.CENTER);
 
         Box hBox = Box.createHorizontalBox();
         hBox.add(new ContactBlock());

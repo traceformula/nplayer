@@ -67,6 +67,7 @@ public class WeaponForgePanel extends AbstractForgePanel
         weightTextField.setText("");
         priceTextField.setText("");
         modifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        super.actionPerformed(null);
     }
 
     private void marshal()

@@ -17,9 +17,10 @@ import com.centerkey.utils.BareBonesBrowserLaunch;
  */
 public class InformationBlock extends BottomBlock implements MouseListener
 {
+    public static InformationBlock instance = new InformationBlock();
     private JLabel infoLabel;
 
-    public InformationBlock()
+    private InformationBlock()
     {
         super(0, INFORBAR_BOTTOM_LINE, INFOBAR_BOTTOM_GRADIENT, INFORBAR_BOTTOM_LINE, INFOBAR_TOP_GRADIENT, INFOBAR_LIGHT_LINE);
 
@@ -47,23 +48,29 @@ public class InformationBlock extends BottomBlock implements MouseListener
         updateAComponent.start();
     }
 
+    public void setInformationString(String text)
+    {
+        infoLabel.setText(text);
+        infoLabel.repaint();
+
+        Color newBottomColor = ColorConstants.INFO_BAR_HIGHLIGHT_BOTTOM;
+        Color newTopColor = ColorConstants.INFO_BAR_HIGHLIGHT_TOP;
+        fadeInto(newBottomColor, newTopColor);
+    }
+
     private void checkVersion()
     {
         String isNewerVersionAvailable = IsVersionUpdated.checkVersion();
 
         if (isNewerVersionAvailable != null)
         {
-            infoLabel.setText("A newer version of nPlayer, version " + isNewerVersionAvailable + ", is availabe. Click here and download it.");
             infoLabel.setToolTipText("http://code.google.com/p/nplayer");
             infoLabel.addMouseListener(this);
             infoLabel.addMouseListener(new MousePickListener(infoLabel));
             this.addMouseListener(new MousePickListener(this));
             this.addMouseListener(this);
-            infoLabel.repaint();
 
-            Color newBottomColor = ColorConstants.INFO_BAR_HIGHLIGHT_BOTTOM;
-            Color newTopColor = ColorConstants.INFO_BAR_HIGHLIGHT_TOP;
-            fadeInto(newBottomColor, newTopColor);
+            setInformationString("A newer version of nPlayer, version " + isNewerVersionAvailable + ", is availabe. Click here and download it.");
         }
     }
 

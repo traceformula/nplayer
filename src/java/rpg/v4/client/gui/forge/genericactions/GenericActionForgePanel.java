@@ -97,6 +97,7 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         nameTextField.setText("");
         hitModifiersForge.setModifierList(v4GenericAction.getHitModifiers().getV4Modifier());
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
+        super.actionPerformed(null);
     }
 
     protected abstract boolean checkIfExists();
