@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThemeList xmlns="rgb.jaxb.character" xmlns:ns2="rpg.jaxb.racelist" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rgb.jaxb.character
+C:\Developer\GameMaster\trunk\nPlayer\src\xml\schemas\all.xsd">
+	<Theme>
+		<Name>Default</Name>
+		<Button>
+			<Active>
+				<XMLColor name="Background" red="255" green="255" blue="255"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="0" green="0" blue="0"/>
+			</Active>
+			<Inactive>
+				<XMLColor name="Background" red="160" green="160" blue="160"/>
+				<XMLColor name="Text" red="64" green="64" blue="64"/>
+				<XMLColor name="Border" red="0" green="0" blue="0"/>
+			</Inactive>
+			<Onclick>
+				<XMLColor name="Background" red="255" green="200" blue="0"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="0" green="0" blue="0"/>
+			</Onclick>
+		</Button>
+		<Dogtag>
+			<Active>
+				<XMLColor name="Background" red="140" green="140" blue="140"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="140" green="140" blue="140"/>
+			</Active>
+			<Inactive>
+				<XMLColor name="Background" red="140" green="140" blue="140"/>
+				<XMLColor name="Text" red="64" green="64" blue="64"/>
+				<XMLColor name="Border" red="140" green="140" blue="140"/>
+			</Inactive>
+			<Onclick>
+				<XMLColor name="Background" red="255" green="200" blue="0"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="255" green="200" blue="0"/>
+			</Onclick>
+		</Dogtag>
+		<Tab>
+			<Active>
+				<XMLColor name="Background" red="255" green="255" blue="255"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="0" green="0" blue="0"/>
+			</Active>
+			<Inactive>
+				<XMLColor name="Background" red="123" green="123" blue="123"/>
+				<XMLColor name="Text" red="64" green="64" blue="64"/>
+				<XMLColor name="Border" red="64" green="64" blue="64"/>
+			</Inactive>
+			<Onclick>
+				<XMLColor name="Background" red="255" green="200" blue="0"/>
+				<XMLColor name="Text" red="0" green="0" blue="0"/>
+				<XMLColor name="Border" red="0" green="0" blue="0"/>
+			</Onclick>
+		</Tab>
+        <StartBattle>
+            <Active>
+                <XMLColor name="Background" red="175" green="55" blue="70"/>
+                <XMLColor name="Text" red="255" green="255" blue="255"/>
+                <XMLColor name="Border" red="180" green="10" blue="25"/>
+            </Active>
+            <Inactive>
+                <XMLColor name="Background" red="170" green="50" blue="65"/>
+                <XMLColor name="Text" red="255" green="255" blue="255"/>
+                <XMLColor name="Border" red="170" green="0" blue="15"/>
+            </Inactive>
+            <Onclick>
+                <XMLColor name="Background" red="170" green="50" blue="65"/>
+                <XMLColor name="Text" red="255" green="255" blue="255"/>
+                <XMLColor name="Border" red="170" green="0" blue="15"/>
+            </Onclick>
+        </StartBattle>
+	</Theme>
+</ThemeList>

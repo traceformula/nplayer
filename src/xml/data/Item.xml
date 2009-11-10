@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<V4_ItemList xmlns="rgb.jaxb.character">
+    <V4_Item>
+        <Name>Leather armor</Name>
+        <BaseItem></BaseItem>
+        <Price>25</Price>
+        <Weight>15.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Light</SubType>
+        <Category>Leather Armor</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Leather armor +2</Name>
+        <BaseItem>Leather armor</BaseItem>
+        <Price>25</Price>
+        <Weight>15.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Light</SubType>
+        <Category>Leather Armor</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Enchantment</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Hide armor +1</Name>
+        <BaseItem>Hide armor</BaseItem>
+        <Price>30</Price>
+        <Weight>25.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Light</SubType>
+        <Category>Hide Armor</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>3</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Enchantment</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Hide armor</Name>
+        <BaseItem></BaseItem>
+        <Price>30</Price>
+        <Weight>25.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Light</SubType>
+        <Category>Hide Armor</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>3</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Chainmail</Name>
+        <Price>40</Price>
+        <Weight>40.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Heavy</SubType>
+        <Category>Chainmail</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Chainmail +2</Name>
+        <Price>40</Price>
+        <Weight>40.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Heavy</SubType>
+        <Category>Chainmail</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Enchantment</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Chainmail +3</Name>
+        <Price>40</Price>
+        <Weight>40.0</Weight>
+        <Type>Armor</Type>
+        <SubType>Heavy</SubType>
+        <Category>Chainmail</Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>3</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Enchantment</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Ring of Protection</Name>
+        <BaseItem></BaseItem>
+        <Price>65000</Price>
+        <Weight>0.0</Weight>
+        <Type>Ring</Type>
+        <SubType></SubType>
+        <Category></Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Charm</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Conjuration</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Fear</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Healing</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Illusion</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Poison</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Polymoprh</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Reliable</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Sleep</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Stance</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Teleportation</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Save vs. Zone</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+    <V4_Item>
+        <Name>Belt of Giant Strength</Name>
+        <BaseItem></BaseItem>
+        <Price>25000</Price>
+        <Weight>0.0</Weight>
+        <Type>Belt</Type>
+        <SubType></SubType>
+        <Category></Category>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Athletics</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Item</SourceID>
+                <V4_ModifierType>Item</V4_ModifierType>
+                <TargetID>Strength</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+    </V4_Item>
+</V4_ItemList>

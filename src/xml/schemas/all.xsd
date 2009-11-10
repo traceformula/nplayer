@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2006 sp2 U (http://www.altova.com) by Sven-Ivar Fjeld (ff) -->
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by Sven-Ivar (ORiON) -->
+<xs:schema targetNamespace="rgb.jaxb.character" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="rgb.jaxb.character" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:ns2="rpg.jaxb.racelist">
+	<xs:element name="V4_BodyPart">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CompatibleItem" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="type" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="V4_ItemCapsule" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="Name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_StateSkeleton">
+		<xs:annotation>
+			<xs:documentation>Collection of all the states in 4th edition.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_State" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_State">
+		<xs:annotation>
+			<xs:documentation>States with values that the user entered or which must be persisted.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DisplayName" type="xs:string"/>
+				<xs:element name="Type">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Integer"/>
+							<xs:enumeration value="String"/>
+							<xs:enumeration value="IntegerAbility"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SubType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Ability"/>
+							<xs:enumeration value="Skill"/>
+							<xs:enumeration value="Defense"/>
+							<xs:enumeration value="Untyped"/>
+							<xs:enumeration value="Unique ID"/>
+							<xs:enumeration value="Character Information"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Category">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Ability scores"/>
+							<xs:enumeration value="Defenses"/>
+							<xs:enumeration value="Skills"/>
+							<xs:enumeration value="Movement"/>
+							<xs:enumeration value="Senses"/>
+							<xs:enumeration value="Other"/>
+							<xs:enumeration value="Character information"/>
+							<xs:enumeration value="Saving throws"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="InitialValue" type="xs:string"/>
+				<xs:element name="StateID" type="xs:string"/>
+				<xs:element ref="V4_ModifierTypeList" minOccurs="0"/>
+				<xs:element ref="V4_StateID" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="V4_Function" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element name="UserEntry" type="xs:boolean" minOccurs="0"/>
+				<xs:element name="Hidden" type="xs:boolean" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ModifierTypeList">
+		<xs:annotation>
+			<xs:documentation>List of ModifierTypes</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_ModifierType" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ModifierType">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="Ability"/>
+				<xs:enumeration value="Armor"/>
+				<xs:enumeration value="Enchantment"/>
+				<xs:enumeration value="Feat"/>
+				<xs:enumeration value="Initial"/>
+				<xs:enumeration value="Item"/>
+				<xs:enumeration value="Power"/>
+				<xs:enumeration value="Proficiency"/>
+				<xs:enumeration value="Racial"/>
+				<xs:enumeration value="Shield"/>
+				<xs:enumeration value="Untyped"/>
+				<xs:enumeration value="Penalty"/>
+				<xs:enumeration value="Total"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="V4_Function">
+		<xs:annotation>
+			<xs:documentation>Max - return maximum value
+Min - return minimum value
+Half - return half value
+Contains - return true/false
+GT - return true/false
+LT - return true/false
+Equals - return true/false
+AbilityModifier - get modifier from ability</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_StateID" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="Type" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Max"/>
+						<xs:enumeration value="Min"/>
+						<xs:enumeration value="Half"/>
+						<xs:enumeration value="Contains"/>
+						<xs:enumeration value="GreaterThan"/>
+						<xs:enumeration value="LesserThan"/>
+						<xs:enumeration value="Equals"/>
+						<xs:enumeration value="AbilityModifier"/>
+						<xs:enumeration value="HpPrLvlMultiplier"/>
+						<xs:enumeration value="DeduceLevel"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="StringToContain" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_StateID" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>StateID to observe</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="V4_Entity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_State" maxOccurs="unbounded"/>
+				<xs:element name="V4_Inventory">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="V4_ItemCapsule" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="V4_EquippedObjects">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="V4_BodyPart" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_StateSubTypeList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Type">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Integer"/>
+							<xs:enumeration value="String"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SubType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Ability"/>
+							<xs:enumeration value="Skill"/>
+							<xs:enumeration value="Save"/>
+							<xs:enumeration value="Untyped"/>
+							<xs:enumeration value="Unique ID"/>
+							<xs:enumeration value="Character Information"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Modifier">
+		<xs:annotation>
+			<xs:documentation>Standard modifier</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Modifier" type="xs:string"/>
+				<xs:element name="ModifierClass" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="String"/>
+							<xs:pattern value="Integer"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SourceID" type="xs:string"/>
+				<xs:element ref="V4_ModifierType"/>
+				<xs:element name="TargetID" type="xs:string"/>
+				<xs:element name="DiceModifier" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Dice modifers. Rolled in game. Can also add static state bonus to total.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DiceType" type="xs:int"/>
+							<xs:element name="NumberOfDice" type="xs:int"/>
+							<xs:element ref="V4_StateID"/>
+							<xs:element name="OverallMultiplier" type="xs:float" default="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="DisalowDiceRow" type="xs:boolean" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ModifierList">
+		<xs:annotation>
+			<xs:documentation>A list of modifiers to apply</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Modifier" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Race">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element ref="V4_ModifierList"/>
+				<xs:element ref="V4_BodyPart" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_RaceList">
+		<xs:annotation>
+			<xs:documentation>A list of races</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Race" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Level">
+		<xs:annotation>
+			<xs:documentation>A level with the given modifiers</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_ModifierList"/>
+			</xs:sequence>
+			<xs:attribute name="applyOnLevel" type="xs:int" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_LevelList">
+		<xs:annotation>
+			<xs:documentation>A list of levels and appropriate modifiers</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Level" minOccurs="30" maxOccurs="30"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Class">
+		<xs:annotation>
+			<xs:documentation>Describes the basic class features</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="ParagonPath" type="xs:boolean"/>
+				<xs:element ref="V4_ModifierList"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ClassList">
+		<xs:annotation>
+			<xs:documentation>A list of classes</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Class" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Power">
+		<xs:annotation>
+			<xs:documentation>A power</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Association" type="xs:string"/>
+				<xs:element name="Level" type="xs:int"/>
+				<xs:element name="Type">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Attack"/>
+							<xs:enumeration value="Utility"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SubType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="At-Will"/>
+							<xs:enumeration value="Encounter"/>
+							<xs:enumeration value="Daily"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Source">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Arcane"/>
+							<xs:enumeration value="Divine"/>
+							<xs:enumeration value="Marital"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="AttackType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Melee"/>
+							<xs:enumeration value="Ranged"/>
+							<xs:enumeration value="Close"/>
+							<xs:enumeration value="Area"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DamageType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Acid"/>
+							<xs:enumeration value="Cold"/>
+							<xs:enumeration value="Fire"/>
+							<xs:enumeration value="Force"/>
+							<xs:enumeration value="Lightning"/>
+							<xs:enumeration value="Necrotic"/>
+							<xs:enumeration value="Poison"/>
+							<xs:enumeration value="Psychic"/>
+							<xs:enumeration value="Radiant"/>
+							<xs:enumeration value="Thunder"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EffectType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Charm"/>
+							<xs:enumeration value="Conjuration"/>
+							<xs:enumeration value="Fear"/>
+							<xs:enumeration value="Healing"/>
+							<xs:enumeration value="Illusion"/>
+							<xs:enumeration value="Poison"/>
+							<xs:enumeration value="Polymorph"/>
+							<xs:enumeration value="Reliable"/>
+							<xs:enumeration value="Sleep"/>
+							<xs:enumeration value="Stance"/>
+							<xs:enumeration value="Teleportation"/>
+							<xs:enumeration value="Zone"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ActionType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Standard"/>
+							<xs:enumeration value="Move"/>
+							<xs:enumeration value="Immediate interrupt"/>
+							<xs:enumeration value="Immediate reaction"/>
+							<xs:enumeration value="Minor"/>
+							<xs:enumeration value="Free"/>
+							<xs:enumeration value="None"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Accessory">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Implement"/>
+							<xs:enumeration value="Weapon"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Range">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Melee"/>
+							<xs:enumeration value="Ranged"/>
+							<xs:enumeration value="Close"/>
+							<xs:enumeration value="Area"/>
+							<xs:enumeration value="Personal"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Attack">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AttackerAbility" type="xs:string"/>
+							<xs:element name="DefenderAbility" type="xs:string"/>
+							<xs:element name="DamageNumDice" type="xs:int"/>
+							<xs:element name="DamageDiceType" type="xs:int"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Weapon">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="BaseWeapon" type="xs:string" minOccurs="0"/>
+				<xs:element name="ProficiencyBonus" type="xs:int"/>
+				<xs:element name="Damage">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="NumDice" type="xs:int"/>
+							<xs:element name="DiceType" type="xs:int"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="RangeIncrement" type="xs:int" minOccurs="0"/>
+				<xs:element name="Price" type="xs:int"/>
+				<xs:element name="Weight" type="xs:double">
+					<xs:annotation>
+						<xs:documentation>Lbs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Group">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Axe"/>
+							<xs:enumeration value="Bow"/>
+							<xs:enumeration value="Crossbow"/>
+							<xs:enumeration value="Flail"/>
+							<xs:enumeration value="Hammer"/>
+							<xs:enumeration value="Heavy Blade"/>
+							<xs:enumeration value="Light Blade"/>
+							<xs:enumeration value="Mace"/>
+							<xs:enumeration value="Pick"/>
+							<xs:enumeration value="Polearm"/>
+							<xs:enumeration value="Sling"/>
+							<xs:enumeration value="Spear"/>
+							<xs:enumeration value="Staff"/>
+							<xs:enumeration value="Unarmed"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Type">
+					<xs:annotation>
+						<xs:documentation>Melee/Ranged</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Melee"/>
+							<xs:enumeration value="Ranged"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Category">
+					<xs:annotation>
+						<xs:documentation>Simple, Military, Superior</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Simple"/>
+							<xs:enumeration value="Military"/>
+							<xs:enumeration value="Superior"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="HandRequirement" type="xs:int">
+					<xs:annotation>
+						<xs:documentation>1 or 2 handed</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Properties">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="HeavyThrown" type="xs:boolean"/>
+							<xs:element name="HighCrit" type="xs:boolean"/>
+							<xs:element name="LightThrown" type="xs:boolean"/>
+							<xs:element name="Load" type="xs:boolean"/>
+							<xs:element name="Off-Hand" type="xs:boolean"/>
+							<xs:element name="Reach" type="xs:boolean"/>
+							<xs:element name="Small" type="xs:boolean"/>
+							<xs:element name="Versatile" type="xs:boolean"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="V4_ModifierList"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_WeaponList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Weapon" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ItemCapsule">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Weight" type="xs:double"/>
+				<xs:element name="UUID" type="xs:string" minOccurs="0"/>
+				<xs:choice>
+					<xs:element ref="V4_Weapon"/>
+					<xs:element ref="V4_Item"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_EntityNameKeyPair">
+		<xs:complexType>
+			<xs:attribute name="Name" type="xs:string" use="required"/>
+			<xs:attribute name="Key" type="xs:string" use="required"/>
+			<xs:attribute name="IsActive" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Group">
+		<xs:annotation>
+			<xs:documentation>Group containing names of entity members and the file location for these.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="InBattle" type="xs:boolean"/>
+				<xs:element name="Color">
+					<xs:complexType>
+						<xs:attribute name="Red" type="xs:int" use="optional" default="255"/>
+						<xs:attribute name="Green" type="xs:int" use="optional" default="255"/>
+						<xs:attribute name="Blue" type="xs:int" use="optional" default="255"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="V4_EntityNameKeyPair" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_GroupList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Group" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_Item">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="BaseItem" type="xs:string" minOccurs="0"/>
+				<xs:element name="Price" type="xs:int"/>
+				<xs:element name="Weight" type="xs:double">
+					<xs:annotation>
+						<xs:documentation>Lbs</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Type">
+					<xs:annotation>
+						<xs:documentation>Armor/Ring/Boots/etc</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string"/>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SubType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Light/Heavy</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Light"/>
+							<xs:enumeration value="Heavy"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Category" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Cloth,Leather,Hide,Chainmail,Scale,Plate</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Cloth armor"/>
+							<xs:enumeration value="Leather armor"/>
+							<xs:enumeration value="Hide armor"/>
+							<xs:enumeration value="Chainmail"/>
+							<xs:enumeration value="Scale mail"/>
+							<xs:enumeration value="Plate armor"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="V4_ModifierList"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ItemList">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_Item" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_GenericAction">
+		<xs:annotation>
+			<xs:documentation>Describes powers, actions and feats.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:string"/>
+				<xs:element name="Requirements">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="CharacterClass" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="Level" type="xs:int" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Type">
+					<xs:annotation>
+						<xs:documentation>Power, Action or Feat</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Power"/>
+							<xs:enumeration value="Action"/>
+							<xs:enumeration value="Feat"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SubType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="At will"/>
+							<xs:enumeration value="Encounter"/>
+							<xs:enumeration value="Daily"/>
+							<xs:enumeration value="Utility"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Source">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Arcane"/>
+							<xs:enumeration value="Divine"/>
+							<xs:enumeration value="Martial"/>
+							<xs:enumeration value="Nature"/>
+							<xs:enumeration value="Ki"/>
+							<xs:enumeration value="Psionic"/>
+							<xs:enumeration value="Elemental"/>
+							<xs:enumeration value="Primal"/>
+							<xs:enumeration value="Shadow"/>
+							<xs:enumeration value="n/a"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DamageType">
+					<xs:annotation>
+						<xs:documentation>acid, cold, fire, etc...</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Acid"/>
+							<xs:enumeration value="Cold"/>
+							<xs:enumeration value="Fire"/>
+							<xs:enumeration value="Force"/>
+							<xs:enumeration value="Lightning"/>
+							<xs:enumeration value="Necrotic"/>
+							<xs:enumeration value="Psionic"/>
+							<xs:enumeration value="Psychic"/>
+							<xs:enumeration value="Radiant"/>
+							<xs:enumeration value="Thunder"/>
+							<xs:enumeration value="n/a"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EffectType">
+					<xs:annotation>
+						<xs:documentation>charm, conjuration, fear, etc...</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Charm"/>
+							<xs:enumeration value="Conjuration"/>
+							<xs:enumeration value="Fear"/>
+							<xs:enumeration value="Healing"/>
+							<xs:enumeration value="Illusion"/>
+							<xs:enumeration value="Posion"/>
+							<xs:enumeration value="Polymorph"/>
+							<xs:enumeration value="Reliable"/>
+							<xs:enumeration value="Sleep"/>
+							<xs:enumeration value="Stance"/>
+							<xs:enumeration value="Teleportation"/>
+							<xs:enumeration value="Zone"/>
+							<xs:enumeration value="n/a"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Implement" type="xs:string"/>
+				<xs:element name="ActionType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Standard"/>
+							<xs:enumeration value="Move"/>
+							<xs:enumeration value="Immediate interrupt"/>
+							<xs:enumeration value="Immediate reaction"/>
+							<xs:enumeration value="Free"/>
+							<xs:enumeration value=""/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="AttackType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Melee"/>
+							<xs:enumeration value="Ranged"/>
+							<xs:enumeration value="Close"/>
+							<xs:enumeration value="Area"/>
+							<xs:enumeration value="Personal"/>
+							<xs:enumeration value="n/a"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SecondaryAttackType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="Melee"/>
+							<xs:enumeration value="Ranged"/>
+							<xs:enumeration value="Close"/>
+							<xs:enumeration value="Area"/>
+							<xs:enumeration value="Personal"/>
+							<xs:enumeration value="n/a"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Target">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="You"/>
+							<xs:enumeration value="You or one ally"/>
+							<xs:enumeration value="One creature"/>
+							<xs:enumeration value="One enemy"/>
+							<xs:enumeration value="One object"/>
+							<xs:enumeration value="Multiple enemies"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="Attack">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="AttackerStateID" type="xs:string" minOccurs="0"/>
+							<xs:element name="DefenderStateID" type="xs:string" minOccurs="0"/>
+							<xs:element name="DisalowDiceRow" type="xs:boolean" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="HitModifiers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="V4_Modifier" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="MissModifiers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="V4_Modifier" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="V4_EntityNameKeyPair" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_GenericActionList">
+		<xs:annotation>
+			<xs:documentation>A list of powers, or actions or feats. Try not to mix.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_GenericAction" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_ConditionalModifier">
+		<xs:annotation>
+			<xs:documentation>Applies modifiers if condition is met</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_CheckCombiner" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_CheckCombiner">
+		<xs:annotation>
+			<xs:documentation>Logic and</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_EntityCheck" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="Type" default="AND">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="AND"/>
+						<xs:enumeration value="OR"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="V4_EntityCheck">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Target">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="My"/>
+							<xs:enumeration value="CurrentAttacker"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element ref="V4_StateID"/>
+				<xs:element name="Is">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="String" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>If state total contains this string</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="GreaterThan" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>If state total is greater than this</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="V4_Modifier"/>
+				<xs:element ref="V4_CheckCombiner" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

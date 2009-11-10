@@ -1,0 +1,1437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<V4_RaceList xmlns="rgb.jaxb.character">
+    <V4_Race>
+        <Name>Dragonborn</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Strength</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Charisma</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>History</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Intimidate</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Dwarf</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Constitution</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Wisdom</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Dungeoneering</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Endurance</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>5</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Save vs. Poison</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>5</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Eladrin</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Dexterity</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Intelligence</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Arcana</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>History</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>5</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Save vs. Charm</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Elf</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Dexterity</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Wisdom</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>7</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Nature</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Perception</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Half-elf</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Constitution</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Charisma</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Diplomacy</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Insight</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Halfling</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Dexterity</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Charisma</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Acrobatics</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>5</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Save vs. Fear</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Dexterity</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Dexterity</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Strength</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Strength</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Constitution</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Constitution</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Wisdom</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Wisdom</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Intelligence</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Intelligence</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human - Charisma</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Charisma</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Tiefling</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Intelligence</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Charisma</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>6</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Speed</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Bluff</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Stealth</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+    <V4_Race>
+        <Name>Human</Name>
+        <V4_ModifierList>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Fortitude</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID>Reflex</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Powers known - At-will</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <SourceID>Racial</SourceID>
+                <V4_ModifierType>Racial</V4_ModifierType>
+                <TargetID># of Feats known</TargetID>
+            </V4_Modifier>
+        </V4_ModifierList>
+        <V4_BodyPart Name="Arms">
+            <CompatibleItem type="Bracers"/>
+            <CompatibleItem type="Shield"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Waist">
+            <CompatibleItem type="Belt"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Eyes">
+            <CompatibleItem type="Glasses"/>
+            <CompatibleItem type="Lens"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Feet">
+            <CompatibleItem type="Boots"/>
+            <CompatibleItem type="Greaves"/>
+            <CompatibleItem type="Shoes"/>
+            <CompatibleItem type="Sandals"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Hands">
+            <CompatibleItem type="Gloves"/>
+            <CompatibleItem type="Gauntlets"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Head">
+            <CompatibleItem type="Hat"/>
+            <CompatibleItem type="Headband"/>
+            <CompatibleItem type="Helmet"/>
+            <CompatibleItem type="Phylactery"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Neck">
+            <CompatibleItem type="Amulet"/>
+            <CompatibleItem type="Brooch"/>
+            <CompatibleItem type="Cape"/>
+            <CompatibleItem type="Cloak"/>
+            <CompatibleItem type="Medallion"/>
+            <CompatibleItem type="Necklace"/>
+            <CompatibleItem type="Periapt"/>
+            <CompatibleItem type="Scarab"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Right Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Left Hand">
+            <CompatibleItem type="Orb"/>
+            <CompatibleItem type="Weapon"/>
+            <CompatibleItem type="OtherNonSpecific"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Torso">
+            <CompatibleItem type="Armor"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="First ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+        <V4_BodyPart Name="Second ring">
+            <CompatibleItem type="Ring"/>
+        </V4_BodyPart>
+    </V4_Race>
+</V4_RaceList>

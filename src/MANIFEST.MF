@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: 1.5.0-rc (Sun Microsystems Inc.)
+Main-Class: rpg.v4.client.gui.GameMasterFrame
+Class-Path: ./lib/activation.jar ./lib/BareBonesBrowserLaunch.jar  ./lib/junit-4.4.jar  ./lib/kunststoff.jar  ./lib/log4j-1.2.14.jar  ./lib/mail.jar ./lib/mac_widgets.jar
+SplashScreen-Image: splashScreen.png

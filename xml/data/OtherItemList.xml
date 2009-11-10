@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProtectiveItem xmlns="rgb.jaxb.character">
+    <ArmorShield>
+        <Name>Ring of health</Name>
+        <Type>Ring</Type>
+        <ACBonus>20</ACBonus>
+        <MaxDexBonus>1</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>10</ft30>
+            <ft20>10</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>111.0</Kilograms>
+            <Lbs>111.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="false">
+            <PropertyName>Magical HP bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>20</PropertyBonus>
+            <PropertyTarget>HP</PropertyTarget>
+        </SpecialProperties>
+        <SpecialProperties benefit="false">
+            <PropertyName>Magical STR bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>20</PropertyBonus>
+            <PropertyTarget>STR</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Ring of Protection +1</Name>
+        <Type>Ring</Type>
+        <ACBonus>20</ACBonus>
+        <MaxDexBonus>1</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>10</ft30>
+            <ft20>10</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>111.0</Kilograms>
+            <Lbs>111.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="false">
+            <PropertyName>Magical Armor bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>1</PropertyBonus>
+            <PropertyTarget>AC</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Ring of the Figther</Name>
+        <Type>Ring</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>DEX bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>DEX</PropertyTarget>
+        </SpecialProperties>
+        <SpecialProperties benefit="true">
+            <PropertyName>STR bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>STR</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Belt of Giant Strength</Name>
+        <Type>Belt</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>STR bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>4</PropertyBonus>
+            <PropertyTarget>STR</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Amulet of Health</Name>
+        <Type>Amulet</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>CON bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>CON</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Boots of Elvenkind</Name>
+        <Type>Boots</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Move Silently bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Move Silently</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Bracelets of Speech</Name>
+        <Type>Bracelets</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Diplomacy bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Diplomacy</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Bracers of Arcehry, Lesser</Name>
+        <Type>Bracers</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Attack Bonus (Ranged) bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>1</PropertyBonus>
+            <PropertyTarget>Attack Bonus (Ranged)</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Brooch of Shielding</Name>
+        <Type>Brooch</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>AC bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>AC</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Cape of Charisma +2</Name>
+        <Type>Cape</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>CHA bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>CHA</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Cloak of Elvenkind</Name>
+        <Type>Cloak</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Hide bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Hide</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Gauntlets of Ogre Power</Name>
+        <Type>Gauntlets</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>STR bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>STR</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Googles of minute seeing</Name>
+        <Type>Glasses</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Search bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Search</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Gloves of Dexterity +2</Name>
+        <Type>Gloves</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>DEX bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>DEX</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Hat of the Bard</Name>
+        <Type>Hat</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Perform bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Perform</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Headband of Intellect +2</Name>
+        <Type>Headband</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>INT bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>INT</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Medallion of Faith</Name>
+        <Type>Medallion</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Knowledge(Religion) bonus</PropertyName>
+            <PropertyType>Other</PropertyType>
+            <PropertyBonus>5</PropertyBonus>
+            <PropertyTarget>Skill: Knowledge(Religion)</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>OtherNonSpecific STR +2</Name>
+        <Type>OtherNonSpecific</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>STR bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>STR</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Swift Shirt</Name>
+        <Type>Shirt</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Initiative bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>3</PropertyBonus>
+            <PropertyTarget>Initiative</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Periapt of Wisdom +2</Name>
+        <Type>Periapt</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>WIS bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>WIS</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Necromantic Phylactery</Name>
+        <Type>Phylactery</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Skill: Knowledge(Arcana) bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>10</PropertyBonus>
+            <PropertyTarget>Skill: Knowledge(Arcana)</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+    <ArmorShield>
+        <Name>Sandals of the monk</Name>
+        <Type>Sandals</Type>
+        <ACBonus>0</ACBonus>
+        <MaxDexBonus>0</MaxDexBonus>
+        <ArmorCheckPenalty>0</ArmorCheckPenalty>
+        <ArcaneSpellFailure>0</ArcaneSpellFailure>
+        <Speed>
+            <ft30>0</ft30>
+            <ft20>0</ft20>
+        </Speed>
+        <Weight>
+            <Kilograms>0.0</Kilograms>
+            <Lbs>0.0</Lbs>
+        </Weight>
+        <SpecialProperties benefit="true">
+            <PropertyName>Fortitude bonus</PropertyName>
+            <PropertyType>Magical</PropertyType>
+            <PropertyBonus>3</PropertyBonus>
+            <PropertyTarget>Fortitude</PropertyTarget>
+        </SpecialProperties>
+    </ArmorShield>
+</ProtectiveItem>

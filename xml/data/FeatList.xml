@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FeatList xmlns="rgb.jaxb.character" xmlns:ns2="rpg.jaxb.racelist" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rgb.jaxb.character all.xsd">
+<Feat SkillFeat="false" WeaponFeat="false" FigtherFeat="false" Name="Svens Dex" MagicFeat="false">
+        <Prerequisites>
+            <SpecialProperties benefit="false">
+                <PropertyName>Sven's DEX bonus</PropertyName>
+                <PropertyType>Feat</PropertyType>
+                <PropertyBonus>2</PropertyBonus>
+                <PropertyTarget>DEX</PropertyTarget>
+            </SpecialProperties>
+        </Prerequisites>
+        <Benefits></Benefits>
+        <LongDescription>Long description</LongDescription>
+        <ShortDescription>Short description</ShortDescription>
+    </Feat>
+</FeatList>
