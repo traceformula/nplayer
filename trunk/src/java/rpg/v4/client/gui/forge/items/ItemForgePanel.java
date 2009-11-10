@@ -97,6 +97,7 @@ public class ItemForgePanel extends AbstractForgePanel implements PropertyChange
         weightTextField.setText("");
         priceTextField.setText("");
         modifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
+        super.actionPerformed(null);
     }
 
     private void marshal()

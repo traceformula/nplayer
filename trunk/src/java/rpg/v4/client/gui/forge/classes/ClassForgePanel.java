@@ -45,6 +45,7 @@ public class ClassForgePanel extends AbstractForgePanel
         characterClass.setName(s);
     }
 
+    @Override
     public void actionPerformed(ActionEvent e)
     {
         String messages = "";
@@ -74,5 +75,6 @@ public class ClassForgePanel extends AbstractForgePanel
         characterClass.setName("");
         nameTextField.setText("");
         modifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
+        super.actionPerformed(null);
     }
 }
