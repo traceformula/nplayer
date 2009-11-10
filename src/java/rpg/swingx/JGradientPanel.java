@@ -113,8 +113,6 @@ public class JGradientPanel extends JBorderLayoutPanel
             boolean isTopGreenDecresing = newTopGradient.getGreen() < topGradient.getGreen();
             boolean isTopBlueDecresing = newTopGradient.getBlue() < topGradient.getBlue();
             
-            System.out.println("Bottom deltas: " + bottomDRed + ", " + bottomDGreen + ", " + bottomDBlue);
-            System.out.println("Bottom red current/target/isDecreasing: " + bottomGradient.getRed() + "/" + newBottomGradient.getRed() +"/" + isBottomRedDecresing);
             // It'd be ridiculous if it took 1000 steps to fade.
             int infiniteLoopCounter = 1000;
             int step = 0;
@@ -128,7 +126,6 @@ public class JGradientPanel extends JBorderLayoutPanel
                 int red = getTheColor(newBottomGradient.getRed(), bottomGradient.getRed() + bottomDRed, isBottomRedDecresing);
                 int blue = getTheColor(newBottomGradient.getBlue(), bottomGradient.getBlue() + bottomDBlue, isBottomBlueDecresing);
                 int green = getTheColor(newBottomGradient.getGreen(), bottomGradient.getGreen() + bottomDGreen, isBottomGreenDecresing);
-                //System.out.println("Step "+step+", red: " + red);
                 Color newBottomColor = new Color(red, green, blue);
 
                 red = getTheColor(newTopGradient.getRed(), topGradient.getRed() + topDRed, isTopRedDecresing);
@@ -149,7 +146,6 @@ public class JGradientPanel extends JBorderLayoutPanel
 
                 try
                 {
-                    //System.out.println("*** sleeping *** step="+step);
                     Thread.sleep(20);
                 } catch (InterruptedException e)
                 {
@@ -160,9 +156,7 @@ public class JGradientPanel extends JBorderLayoutPanel
         
         private int getTheColor(int targetColor, int calculatedNextColor, boolean isDecreasing)
         {
-            //System.out.println("Is beyond target: " + (isDecreasing && calculatedNextColor < targetColor)  + " || " +
-            //        (!isDecreasing && calculatedNextColor > targetColor));
-            boolean isBeyondTarget = (isDecreasing && calculatedNextColor < targetColor) || 
+            boolean isBeyondTarget = (isDecreasing && calculatedNextColor < targetColor) ||
                     (!isDecreasing && calculatedNextColor > targetColor);
             return isBeyondTarget ? targetColor : calculatedNextColor;
         }
