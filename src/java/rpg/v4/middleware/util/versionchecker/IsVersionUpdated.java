@@ -41,7 +41,7 @@ public class IsVersionUpdated
         checkVersion();
     }
 
-    public static boolean checkVersion()
+    public static String checkVersion()
     {
         URL u;
         String thisLine = null;
@@ -75,12 +75,13 @@ public class IsVersionUpdated
             System.err.println(e);
         }
 
-        return false;
+        return null;
     }
 
-    private static boolean isVersionDifferent(String nplayerText)
+    private static String isVersionDifferent(String nplayerText)
     {
-        String versionString = nplayerText.replaceAll("nPlayer v", "").replaceAll(" ", "").replaceAll("\\.", "");
+        String webVersionString = nplayerText.replaceAll("nPlayer v", "").replaceAll(" ", "");
+        String versionString = webVersionString.replaceAll("\\.", "");
         String currentVersionString = GameMasterFrame.VERSION.replaceAll("\\.", "");
 
         Integer webVersion = Integer.parseInt(versionString);
@@ -90,7 +91,7 @@ public class IsVersionUpdated
         logger.info("Is currentVersion (" + currentVersion + ") different than web version ("
                 + webVersion + "): " + webVersionIsNewer);
 
-        return webVersionIsNewer;
+        return webVersionIsNewer ? webVersionString : null;
     }
 
 }

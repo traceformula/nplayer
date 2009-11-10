@@ -48,4 +48,7 @@ public class ColorConstants
     public static final Color TRANSPARENT = new Color(0, 0, 0, 0);
     public static final Color BATTLE_UNSELECTED = new Color(254, 140, 0);
     public static final Color BATTLE_SELECTED = new Color(204, 0, 0);
+
+    public static final Color INFO_BAR_HIGHLIGHT_BOTTOM = new Color(254, 99, 0);
+    public static final Color INFO_BAR_HIGHLIGHT_TOP = new Color(254, 140, 0);
 }

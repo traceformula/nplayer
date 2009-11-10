@@ -80,5 +80,78 @@ public class JGradientPanel extends JBorderLayoutPanel
         g2.fillRect(0, 0, this.getWidth(), this.getHeight());
     }
 
+    protected void fadeInto(Color newBottomGradient, Color newTopGradient)
+    {
+        Runnable fader = new Fader(newBottomGradient, newTopGradient);
+        SwingUtilities.invokeLater(fader);
+    }
+    
+    private class Fader implements Runnable
+    {
+        private Color newBottomGradient, newTopGradient;
 
+        public Fader(Color newBottomGradient, Color newTopGradient)
+        {
+            this.newBottomGradient = newBottomGradient;
+            this.newTopGradient = newTopGradient;
+        }
+
+        public void run()
+        {
+            double deltaPercentageMovement = 0.05;
+            int bottomDRed = (int) ((newBottomGradient.getRed() - bottomGradient.getRed()) * deltaPercentageMovement); 
+            int bottomDGreen = (int) ((newBottomGradient.getGreen() - bottomGradient.getGreen()) * deltaPercentageMovement); 
+            int bottomDBlue = (int) ((newBottomGradient.getBlue() - bottomGradient.getBlue()) * deltaPercentageMovement);
+            boolean isBottomRedDecresing = newBottomGradient.getRed() < bottomGradient.getRed();
+            boolean isBottomGreenDecresing = newBottomGradient.getGreen() < bottomGradient.getGreen();
+            boolean isBottomBlueDecresing = newBottomGradient.getBlue() < bottomGradient.getBlue();
+            
+            int topDRed = (int) ((newTopGradient.getRed() - topGradient.getRed()) * deltaPercentageMovement); 
+            int topDGreen = (int) ((newTopGradient.getGreen() - topGradient.getGreen()) * deltaPercentageMovement); 
+            int topDBlue = (int) ((newTopGradient.getBlue() - topGradient.getBlue()) * deltaPercentageMovement);
+            boolean isTopRedDecresing = newTopGradient.getRed() < topGradient.getRed();
+            boolean isTopGreenDecresing = newTopGradient.getGreen() < topGradient.getGreen();
+            boolean isTopBlueDecresing = newTopGradient.getBlue() < topGradient.getBlue();
+            
+            
+            // It'd be ridiculous if it took 1000 steps to fade.
+            int infiniteLoopCounter = 1000;
+            int step = 0;
+            boolean bottomColorDiffers = true;
+            boolean topColorDiffers = true;
+            step++;
+            boolean stillFading = (bottomColorDiffers || topColorDiffers) && step < infiniteLoopCounter;
+            
+            while (stillFading)
+            {
+                
+                int red = getTheColor(newBottomGradient.getRed(), bottomGradient.getRed() + bottomDRed, isBottomRedDecresing);
+                int blue = getTheColor(newBottomGradient.getBlue(), bottomGradient.getBlue() + bottomDBlue, isBottomBlueDecresing);
+                int green = getTheColor(newBottomGradient.getGreen(), bottomGradient.getGreen() + bottomDGreen, isBottomGreenDecresing);
+                Color newBottomColor = new Color(red, green, blue);
+
+                red = getTheColor(newTopGradient.getRed(), topGradient.getRed() + topDRed, isTopRedDecresing);
+                blue = getTheColor(newTopGradient.getBlue(), topGradient.getBlue() + topDBlue, isTopBlueDecresing);
+                green = getTheColor(newTopGradient.getGreen(), topGradient.getGreen() + topDGreen, isTopGreenDecresing);
+                Color newTopColor = new Color(red, green, blue);
+                
+                bottomColorDiffers =! (bottomGradient.equals(newBottomColor));
+                topColorDiffers =! (topGradient.equals(newTopColor));
+                step++;
+                stillFading = (bottomColorDiffers || topColorDiffers) && step < infiniteLoopCounter;
+
+                // Set the new colors and repaint
+                bottomGradient = newBottomGradient;
+                topGradient = newTopGradient;
+                repaint();
+            }
+        }
+        
+        private int getTheColor(int targetColor, int calculatedNextColor, boolean isDecreasing)
+        {
+            boolean isBeyondTarget = (isDecreasing && calculatedNextColor < targetColor) || 
+                    (!isDecreasing && calculatedNextColor > targetColor);
+            return isBeyondTarget ? targetColor : calculatedNextColor;
+        }
+    }
 }
