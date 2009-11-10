@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProtectiveItem xmlns="rgb.jaxb.character" xmlns:ns2="rpg.jaxb.racelist" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rgb.jaxb.character
+C:\DOCUME~1\SVEN-I~1\MINEDO~1\_Development\Java\GameMaster\xml\schemas\all.xsd">
+	<ArmorShield>
+		<Name>Padded</Name>
+		<Type>Light Armor</Type>
+		<ACBonus>1</ACBonus>
+		<MaxDexBonus>8</MaxDexBonus>
+		<ArmorCheckPenalty>0</ArmorCheckPenalty>
+		<ArcaneSpellFailure>5</ArcaneSpellFailure>
+		<Speed>
+			<ft30>30</ft30>
+			<ft20>20</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>10</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Leather</Name>
+		<Type>Light Armor</Type>
+		<ACBonus>2</ACBonus>
+		<MaxDexBonus>6</MaxDexBonus>
+		<ArmorCheckPenalty>0</ArmorCheckPenalty>
+		<ArcaneSpellFailure>10</ArcaneSpellFailure>
+		<Speed>
+			<ft30>30</ft30>
+			<ft20>20</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>15</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Studded Leather</Name>
+		<Type>Light Armor</Type>
+		<ACBonus>3</ACBonus>
+		<MaxDexBonus>5</MaxDexBonus>
+		<ArmorCheckPenalty>-1</ArmorCheckPenalty>
+		<ArcaneSpellFailure>15</ArcaneSpellFailure>
+		<Speed>
+			<ft30>30</ft30>
+			<ft20>20</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>20</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Chain Shirt</Name>
+		<Type>Light Armor</Type>
+		<ACBonus>4</ACBonus>
+		<MaxDexBonus>4</MaxDexBonus>
+		<ArmorCheckPenalty>-2</ArmorCheckPenalty>
+		<ArcaneSpellFailure>20</ArcaneSpellFailure>
+		<Speed>
+			<ft30>30</ft30>
+			<ft20>20</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>25</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Hide</Name>
+		<Type>Medium Armor</Type>
+		<ACBonus>3</ACBonus>
+		<MaxDexBonus>4</MaxDexBonus>
+		<ArmorCheckPenalty>-3</ArmorCheckPenalty>
+		<ArcaneSpellFailure>20</ArcaneSpellFailure>
+		<Speed>
+			<ft30>20</ft30>
+			<ft20>15</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>25</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Scale Male</Name>
+		<Type>Medium Armor</Type>
+		<ACBonus>4</ACBonus>
+		<MaxDexBonus>3</MaxDexBonus>
+		<ArmorCheckPenalty>-4</ArmorCheckPenalty>
+		<ArcaneSpellFailure>25</ArcaneSpellFailure>
+		<Speed>
+			<ft30>20</ft30>
+			<ft20>15</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>30</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Chainmail</Name>
+		<Type>Medium Armor</Type>
+		<ACBonus>5</ACBonus>
+		<MaxDexBonus>2</MaxDexBonus>
+		<ArmorCheckPenalty>-5</ArmorCheckPenalty>
+		<ArcaneSpellFailure>30</ArcaneSpellFailure>
+		<Speed>
+			<ft30>20</ft30>
+			<ft20>15</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>40</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Breastplate</Name>
+		<Type>Medium Armor</Type>
+		<ACBonus>5</ACBonus>
+		<MaxDexBonus>3</MaxDexBonus>
+		<ArmorCheckPenalty>-4</ArmorCheckPenalty>
+		<ArcaneSpellFailure>25</ArcaneSpellFailure>
+		<Speed>
+			<ft30>20</ft30>
+			<ft20>15</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>30</Lbs>
+		</Weight>
+		</ArmorShield>
+		<ArmorShield>
+			<Name>Splint Mail</Name>
+			<Type>Heavy Armor</Type>
+			<ACBonus>6</ACBonus>
+			<MaxDexBonus>0</MaxDexBonus>
+			<ArmorCheckPenalty>-7</ArmorCheckPenalty>
+			<ArcaneSpellFailure>40</ArcaneSpellFailure>
+			<Speed>
+				<ft30>20</ft30>
+				<ft20>15</ft20>
+			</Speed>
+			<Weight>
+				<Kilograms>1</Kilograms>
+				<Lbs>45</Lbs>
+			</Weight>
+		</ArmorShield>
+		<ArmorShield>
+			<Name>Banded Mail</Name>
+			<Type>Heavy Armor</Type>
+			<ACBonus>6</ACBonus>
+			<MaxDexBonus>1</MaxDexBonus>
+			<ArmorCheckPenalty>-6</ArmorCheckPenalty>
+			<ArcaneSpellFailure>35</ArcaneSpellFailure>
+			<Speed>
+				<ft30>20</ft30>
+				<ft20>15</ft20>
+			</Speed>
+			<Weight>
+				<Kilograms>1</Kilograms>
+				<Lbs>35</Lbs>
+			</Weight>
+		</ArmorShield>
+</ProtectiveItem>

@@ -1,0 +1,1 @@
+xjc -p rpg.v4.middleware.jaxb -d ../../java all.xsd

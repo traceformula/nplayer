@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RaceList xmlns="rgb.jaxb.character" xmlns:ns2="rpg.jaxb.racelist" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rgb.jaxb.character
+C:/Developer/GameMaster/trunk/nplayer/src/xml/schemas/all.xsd">
+	<Race raceName="Human" displayName="Human">
+		<Description>
+            <RaceSize>Medium</RaceSize>
+			<BaseSpeed>30</BaseSpeed>
+			<NumberOfBonusFeats>1</NumberOfBonusFeats>
+			<NumberOfSkillPointsAtFirstLevel>8</NumberOfSkillPointsAtFirstLevel>
+			<NumberOfSkillPointsInConsecutiveLevels>4</NumberOfSkillPointsInConsecutiveLevels>
+			<VisionType displayName="Normal vision" visionType="Normal" visionLengthInFeet="99999"/>
+			<AutomaticLanguages>
+				<Language name="Common" proficiency="Fluent"/>
+			</AutomaticLanguages>
+			<NaturalArmorClassBonus>0</NaturalArmorClassBonus>
+		</Description>
+		<BodyPart Name="Belt">
+			<CompatibleArmorType armorType="Belt"/>
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+		</BodyPart>
+		<BodyPart Name="Eyes">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Glasses"/>
+			<CompatibleArmorType armorType="Lens"/>
+		</BodyPart>
+		<BodyPart Name="Feet">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Boots"/>
+			<CompatibleArmorType armorType="Shoes"/>
+			<CompatibleArmorType armorType="Sandals"/>
+		</BodyPart>
+		<BodyPart Name="Gloves">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Gloves"/>
+			<CompatibleArmorType armorType="Gauntlets"/>
+		</BodyPart>
+		<BodyPart Name="Head">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Headband"/>
+			<CompatibleArmorType armorType="Hat"/>
+			<CompatibleArmorType armorType="Helmet"/>
+			<CompatibleArmorType armorType="Phylactery"/>
+		</BodyPart>
+		<BodyPart Name="Neck">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Amulet"/>
+			<CompatibleArmorType armorType="Brooch"/>
+			<CompatibleArmorType armorType="Medallion"/>
+			<CompatibleArmorType armorType="Necklace"/>
+			<CompatibleArmorType armorType="Periapt"/>
+			<CompatibleArmorType armorType="Scarab"/>
+		</BodyPart>
+		<BodyPart Name="Right Hand">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Shield"/>
+			<NaturalWeapon DisplayName="Fist">
+				<Damage>
+					<LowerBound>1</LowerBound>
+					<UpperBound>4</UpperBound>
+				</Damage>
+				<Critical>
+					<CriticalMultiplier>2</CriticalMultiplier>
+					<LowerBound>20</LowerBound>
+					<UpperBound>20</UpperBound>
+				</Critical>
+				<Type>Bludgeoning</Type>
+				<BattleForm>Normal</BattleForm>
+				<EquippableWeaponCategory WeaponType="Light Melee" ProficiencyType="Simple"/>
+				<EquippableWeaponCategory WeaponType="Light Melee" ProficiencyType="Martial"/>
+				<EquippableWeaponCategory WeaponType="Light Melee" ProficiencyType="Exotic"/>
+				<EquippableWeaponCategory WeaponType="One-Handed Melee" ProficiencyType="Simple"/>
+				<EquippableWeaponCategory WeaponType="One-Handed Melee" ProficiencyType="Martial"/>
+				<EquippableWeaponCategory WeaponType="One-Handed Melee" ProficiencyType="Exotic"/>
+				<EquippableWeaponCategory WeaponType="Two-Handed Melee" ProficiencyType="Simple"/>
+				<EquippableWeaponCategory WeaponType="Two-Handed Melee" ProficiencyType="Martial"/>
+				<EquippableWeaponCategory WeaponType="Two-Handed Melee" ProficiencyType="Exotic"/>
+				<EquippableWeaponCategory WeaponType="Ranged" ProficiencyType="Simple"/>
+				<EquippableWeaponCategory WeaponType="Ranged" ProficiencyType="Martial"/>
+				<EquippableWeaponCategory WeaponType="Ranged" ProficiencyType="Exotic"/>
+			</NaturalWeapon>
+		</BodyPart>
+		<BodyPart Name="Left Hand">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Shield"/>
+			<NaturalWeapon DisplayName="Fist">
+				<Damage>
+					<LowerBound>1</LowerBound>
+					<UpperBound>4</UpperBound>
+				</Damage>
+				<Critical>
+					<CriticalMultiplier>2</CriticalMultiplier>
+					<LowerBound>20</LowerBound>
+					<UpperBound>20</UpperBound>
+				</Critical>
+				<Type>Bludgeoning</Type>
+				<BattleForm>Normal</BattleForm>
+				<EquippableWeaponCategory WeaponType="All" ProficiencyType="All"/>
+			</NaturalWeapon>
+		</BodyPart>
+		<BodyPart Name="Ring finger, right">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Ring"/>
+		</BodyPart>
+		<BodyPart Name="Ring finger, left">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Ring"/>
+		</BodyPart>
+				<BodyPart Name="Shoulders">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Cloak"/>
+			<CompatibleArmorType armorType="Cape"/>
+			<CompatibleArmorType armorType="Mantle"/>
+		</BodyPart>
+		<BodyPart Name="Torso">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Heavy Armor"/>
+			<CompatibleArmorType armorType="Light Armor"/>
+			<CompatibleArmorType armorType="Medium Armor"/>
+		</BodyPart>
+		<BodyPart Name="Torso, undergarment">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Vest"/>
+			<CompatibleArmorType armorType="Vestment"/>
+			<CompatibleArmorType armorType="Shirt"/>
+		</BodyPart>
+		<BodyPart Name="Wrists">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Bracers"/>
+			<CompatibleArmorType armorType="Bracelets"/>
+		</BodyPart>
+	</Race>
+	<Race raceName="Elf" displayName="Elf">
+		<Description>
+            <RaceSize>Medium</RaceSize>
+			<BaseSpeed>30</BaseSpeed>
+			<NumberOfBonusFeats>1</NumberOfBonusFeats>
+			<NumberOfSkillPointsAtFirstLevel>8</NumberOfSkillPointsAtFirstLevel>
+			<NumberOfSkillPointsInConsecutiveLevels>4</NumberOfSkillPointsInConsecutiveLevels>
+			<VisionType displayName="Normal vision" visionType="Normal" visionLengthInFeet="99999"/>
+			<VisionType displayName="Low-Light vision" visionType="Low-Light" visionLengthInFeet="60"/>
+			<AutomaticLanguages>
+				<Language name="Common" proficiency="Fluent"/>
+			</AutomaticLanguages>
+			<NaturalArmorClassBonus>0</NaturalArmorClassBonus>
+		</Description>
+		<BodyPart Name="Belt">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Belt"/>
+		</BodyPart>
+		<BodyPart Name="Eyes">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Glasses"/>
+			<CompatibleArmorType armorType="Lens"/>
+		</BodyPart>
+		<BodyPart Name="Feet">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Boots"/>
+			<CompatibleArmorType armorType="Shoes"/>
+			<CompatibleArmorType armorType="Sandals"/>
+		</BodyPart>
+		<BodyPart Name="Gloves">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Gloves"/>
+			<CompatibleArmorType armorType="Gauntlets"/>
+		</BodyPart>
+		<BodyPart Name="Head">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Headband"/>
+			<CompatibleArmorType armorType="Hat"/>
+			<CompatibleArmorType armorType="Helmet"/>
+			<CompatibleArmorType armorType="Phylactery"/>
+		</BodyPart>
+		<BodyPart Name="Neck">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Amulet"/>
+			<CompatibleArmorType armorType="Brooch"/>
+			<CompatibleArmorType armorType="Medallion"/>
+			<CompatibleArmorType armorType="Necklace"/>
+			<CompatibleArmorType armorType="Periapt"/>
+			<CompatibleArmorType armorType="Scarab"/>
+		</BodyPart>
+		<BodyPart Name="Right Hand">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Shield"/>
+			<NaturalWeapon DisplayName="Fist">
+				<Damage>
+					<LowerBound>1</LowerBound>
+					<UpperBound>4</UpperBound>
+				</Damage>
+				<Critical>
+					<CriticalMultiplier>2</CriticalMultiplier>
+					<LowerBound>20</LowerBound>
+					<UpperBound>20</UpperBound>
+				</Critical>
+				<Type>Bludgeoning</Type>
+				<BattleForm>Normal</BattleForm>
+				<EquippableWeaponCategory WeaponType="All" ProficiencyType="All"/>
+			</NaturalWeapon>
+		</BodyPart>
+		<BodyPart Name="Left Hand">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Shield"/>
+			<NaturalWeapon DisplayName="Fist">
+				<Damage>
+					<LowerBound>1</LowerBound>
+					<UpperBound>4</UpperBound>
+				</Damage>
+				<Critical>
+					<CriticalMultiplier>2</CriticalMultiplier>
+					<LowerBound>20</LowerBound>
+					<UpperBound>20</UpperBound>
+				</Critical>
+				<Type>Bludgeoning</Type>
+				<BattleForm>Normal</BattleForm>
+				<EquippableWeaponCategory WeaponType="All" ProficiencyType="All"/>
+			</NaturalWeapon>
+		</BodyPart>
+		<BodyPart Name="Ring finger, right">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Ring"/>
+		</BodyPart>
+		<BodyPart Name="Ring finger, left">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Ring"/>
+		</BodyPart>
+		<BodyPart Name="Shoulders">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Cloak"/>
+			<CompatibleArmorType armorType="Cape"/>
+			<CompatibleArmorType armorType="Mantle"/>
+		</BodyPart>
+		<BodyPart Name="Torso">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Heavy Armor"/>
+			<CompatibleArmorType armorType="Light Armor"/>
+			<CompatibleArmorType armorType="Medium Armor"/>
+		</BodyPart>
+		<BodyPart Name="Torso, undergarment">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Vest"/>
+			<CompatibleArmorType armorType="Vestment"/>
+			<CompatibleArmorType armorType="Shirt"/>
+		</BodyPart>
+		<BodyPart Name="Wrists">
+			<CompatibleArmorType armorType="OtherNonSpecific"/>
+			<CompatibleArmorType armorType="Bracers"/>
+			<CompatibleArmorType armorType="Bracelets"/>
+		</BodyPart>
+        <SpecialProperties benefit="true">
+            <PropertyName>Race bonus</PropertyName>
+            <PropertyType>Race bonus</PropertyType>
+            <PropertyBonus>2</PropertyBonus>
+            <PropertyTarget>DEX</PropertyTarget>
+        </SpecialProperties>
+        <SpecialProperties benefit="true">
+            <PropertyName>Race bonus</PropertyName>
+            <PropertyType>Race bonus</PropertyType>
+            <PropertyBonus>-2</PropertyBonus>
+            <PropertyTarget>CON</PropertyTarget>
+        </SpecialProperties>
+	</Race>
+</RaceList>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProtectiveItem xmlns="rgb.jaxb.character" xmlns:ns2="rpg.jaxb.racelist" xmlns:ns1="rpg.jaxb.weaponlist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="rgb.jaxb.character
+C:\DOCUME~1\SVEN-I~1\MINEDO~1\_Development\Java\GameMaster\xml\schemas\all.xsd">
+	<ArmorShield>
+		<Name>Buckler</Name>
+		<Type>Shield</Type>
+		<ACBonus>1</ACBonus>
+		<MaxDexBonus>0</MaxDexBonus>
+		<ArmorCheckPenalty>1</ArmorCheckPenalty>
+		<ArcaneSpellFailure>5</ArcaneSpellFailure>
+		<Speed>
+			<ft30>0</ft30>
+			<ft20>0</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>5</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>K Shield, the</Name>
+		<Type>Shield</Type>
+		<ACBonus>10</ACBonus>
+		<MaxDexBonus>0</MaxDexBonus>
+		<ArmorCheckPenalty>10</ArmorCheckPenalty>
+		<ArcaneSpellFailure>50</ArcaneSpellFailure>
+		<Speed>
+			<ft30>15</ft30>
+			<ft20>10</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>60</Lbs>
+		</Weight>
+	</ArmorShield>
+	<ArmorShield>
+		<Name>Tower shield</Name>
+		<Type>Shield</Type>
+		<ACBonus>4</ACBonus>
+		<MaxDexBonus>2</MaxDexBonus>
+		<ArmorCheckPenalty>-10</ArmorCheckPenalty>
+		<ArcaneSpellFailure>50</ArcaneSpellFailure>
+		<Speed>
+			<ft30>0</ft30>
+			<ft20>0</ft20>
+		</Speed>
+		<Weight>
+			<Kilograms>1</Kilograms>
+			<Lbs>45</Lbs>
+		</Weight>
+	</ArmorShield>
+</ProtectiveItem>
