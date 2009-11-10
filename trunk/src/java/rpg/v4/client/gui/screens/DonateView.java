@@ -6,6 +6,7 @@ import rpg.v4.client.gui.util.WelcomeMessage;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.image.ImageKit;
 import rpg.v4.client.gui.util.listener.MousePickListener;
+import rpg.v4.client.gui.GameMasterFrame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -22,7 +23,7 @@ public class DonateView extends JTransparentPanel implements MouseListener
 
     public DonateView()
     {
-        String header = "Please donate towards the software :-) Thank you!";
+        String header = "Thank you for using nPlayer version "+ GameMasterFrame.VERSION+". Please donate towards the software. Thank you!";
         add(LabelFactory.createHeaderLargeLabel(header), BorderLayout.NORTH);
 
         ImageIcon icon = ImageKit.loadImageIcon("PayPal");
