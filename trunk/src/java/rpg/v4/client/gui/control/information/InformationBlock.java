@@ -26,14 +26,25 @@ public class InformationBlock extends BottomBlock implements MouseListener
         infoLabel = new JLabel("");
         add(infoLabel, BorderLayout.CENTER);
 
-        Runnable updateAComponent = new Runnable()
+        Thread updateAComponent = new Thread()
         {
             public void run()
             {
+                while (!isDisplayable())
+                {
+                    try
+                    {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e)
+                    {
+                        e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                    }
+                }
+
                 checkVersion();
             }
         };
-        SwingUtilities.invokeLater(updateAComponent);
+        updateAComponent.start();
     }
 
     private void checkVersion()
@@ -76,6 +87,6 @@ public class InformationBlock extends BottomBlock implements MouseListener
     public void mouseExited(MouseEvent e)
     {
     }
-    
+
 
 }
