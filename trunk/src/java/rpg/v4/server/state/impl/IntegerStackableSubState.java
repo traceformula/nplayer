@@ -86,7 +86,7 @@ public class IntegerStackableSubState implements SubState, Serializable
 
         for (Object key : availableModifiers.keySet())
         {
-            returnValue += availableModifiers.get(key) + " - " + key + ", ";
+            returnValue += availableModifiers.get(key) + ": " + key + ", ";
         }
 
         returnValue += ") ";
