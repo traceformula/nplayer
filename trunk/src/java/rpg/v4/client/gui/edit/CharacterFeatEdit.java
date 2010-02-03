@@ -8,27 +8,43 @@ import rpg.v4.client.gui.edit.feats.FeatPanel;
 import rpg.v4.client.proxy.ClientProxyKit;
 import rpg.v4.server.entity.Entity;
 import rpg.v4.server.state.State;
+import rpg.v4.server.state.impl.StringState;
+import rpg.v4.server.state.impl.StringListState;
 import rpg.v4.middleware.util.collection.ObservableArrayList;
 
 import javax.swing.*;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.Map;
+import java.util.HashMap;
 import java.awt.*;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import org.apache.log4j.Logger;
 
 /**
  * Displays feats of the active character available.
  */
-public class CharacterFeatEdit extends JContentRenderingPanel implements Observer
+public class CharacterFeatEdit extends JContentRenderingPanel implements Observer, ActionListener
 {
+    private static final Logger logger = Logger.getLogger(CharacterFeatEdit.class);
+
     private Entity activeEntity;
     private JPanel featListings;
+    private Map<String, JCheckBox> featMap = new HashMap<String, JCheckBox>(100);
+    private boolean isUpdating = false;
 
 
     public CharacterFeatEdit()
     {
         JLabel label = LabelFactory.createHeaderLargeLabel("Feats");
-        add(label, BorderLayout.NORTH);
+        JLabel infoLabel = LabelFactory.createInfoLabel("The actual benefits of feats are currently NOT being applied but will be soon.");
+        infoLabel.setBorder(BorderFactory.createEmptyBorder(5,10,5,5));
+        Box box = Box.createVerticalBox();
+        box.add(label);
+        box.add(infoLabel);
+        add(box, BorderLayout.NORTH);
 
         featListings = new JTransparentPanel();
         featListings.setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -41,19 +57,22 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
         CharacterProvider.provider.addObserver(this);
         CharacterSidePanel.addPanelAsInvoker(this);
 
+
         updateFeats();
     }
 
     private void updateFeats()
     {
         featListings.removeAll();
+        featMap.clear();
         featListings.setLayout(new FlowLayout(FlowLayout.LEFT));
         featListings.setPreferredSize(new Dimension(300,300));
         ObservableArrayList<String> featList = ClientProxyKit.CLIENT_PROXY.getAvailableFeats();
         for (String featName : featList)
         {
-            FeatPanel featPanel = new FeatPanel(featName);
+            JCheckBox featPanel = FeatPanel.createCheckBox(featName, this);
             featListings.add(featPanel);
+            featMap.put(featName, featPanel);
         }
 
         this.revalidate();
@@ -62,12 +81,19 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
 
     private void updateFeatSelection()
     {
+        isUpdating = true;
         if (null == activeEntity)
         {
             return;
         }
 
-        
+        StringListState selectedFeatsState = (StringListState) activeEntity.getStateMap().get("Selected Feats");
+        for (JCheckBox checkBox : featMap.values())
+        {
+            checkBox.setSelected(selectedFeatsState.contains(checkBox.getText()));
+        }
+
+        isUpdating = false;
     }
 
     public void update(Observable o, Object arg)
@@ -95,6 +121,27 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
 
         activeEntity = entity;
         activeEntity.getStateMap().get("Race Updated").addObserver(this);
+        updateFeatSelection();
     }
 
+    public void actionPerformed(ActionEvent actionEvent)
+    {
+        if (isUpdating || activeEntity == null)
+            return;
+
+        JCheckBox checkBox = (JCheckBox) actionEvent.getSource();
+        String featName = checkBox.getText();
+        Boolean isSelected = checkBox.isSelected();
+
+        StringListState selectedFeatsState = (StringListState) activeEntity.getStateMap().get("Selected Feats");
+
+        if (selectedFeatsState.contains(featName) && !isSelected)
+        {
+            // Feat has been deselected.
+            selectedFeatsState.remove("Untyped", featName);
+        } else if (isSelected && !selectedFeatsState.contains(featName))
+        {
+            selectedFeatsState.add("Untyped", featName, featName);
+        }
+    }
 }

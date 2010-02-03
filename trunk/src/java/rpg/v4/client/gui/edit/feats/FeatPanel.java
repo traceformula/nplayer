@@ -1,6 +1,7 @@
 package rpg.v4.client.gui.edit.feats;
 
 import rpg.swingx.JTransparentPanel;
+import rpg.v4.client.gui.edit.CharacterFeatEdit;
 import com.explodingpixels.macwidgets.HudWidgetFactory;
 
 import javax.swing.*;
@@ -17,13 +18,14 @@ import java.awt.*;
 public class FeatPanel extends JTransparentPanel
 {
     private static final Dimension size = new Dimension(160, 20);
-    public FeatPanel(String featName)
+
+    public static JCheckBox createCheckBox(String featName, CharacterFeatEdit characterFeatEdit)
     {
         JCheckBox checkBox = HudWidgetFactory.createHudCheckBox(featName);
-        add(checkBox, BorderLayout.WEST);
-        setPreferredSize(size);
-        setMinimumSize(size);
-        setMaximumSize(size);
-
+        checkBox.setPreferredSize(size);
+        checkBox.setMinimumSize(size);
+        checkBox.setMaximumSize(size);
+        checkBox.addActionListener(characterFeatEdit);
+        return checkBox;
     }
 }
