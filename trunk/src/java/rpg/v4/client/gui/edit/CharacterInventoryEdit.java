@@ -16,7 +16,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * Displays all characters available.
+ * Displays inventory of the active haracter available.
  */
 public class CharacterInventoryEdit extends JContentRenderingPanel implements Observer
 {

@@ -8,6 +8,7 @@ import rpg.v4.client.proxy.ClientProxyKit;
 import rpg.v4.middleware.constants.StateIDs;
 import rpg.v4.middleware.jaxb.V4Modifier;
 import rpg.v4.middleware.jaxb.V4Weapon;
+import rpg.v4.middleware.util.StringConstants;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -92,12 +93,12 @@ public class WeaponForgePanel extends AbstractForgePanel
         weapon.setCategory(categoryPicker.getText());
         weapon.setHandRequirement(Integer.valueOf(numOfHandsPicker.getText()));
 
-        // If adding modifier to this weapons BAB, update the BAB to this weapons name
+        // If adding modifier to this weapons DYNAMIC_BAB, update the DYNAMIC_BAB to this weapons name
         for (V4Modifier modifier : modifierForge.getModifierList())
         {
             if (modifier.getTargetID().equals(StateIDs.THIS_WEAPON_BAB.toString()))
             {
-                modifier.setTargetID("BAB " + weapon.getName());
+                modifier.setTargetID(StringConstants.DYNAMIC_BAB + weapon.getName());
             }
         }
     }
@@ -125,11 +126,11 @@ public class WeaponForgePanel extends AbstractForgePanel
         categoryPicker.setText(weapon.getCategory());
         numOfHandsPicker.setText(String.valueOf(weapon.getHandRequirement()));
 
-        // Have to check if there's any modifiers to this weapons BAB
-        // If adding modifier to this weapons BAB, update the BAB to this weapons name
+        // Have to check if there's any modifiers to this weapons DYNAMIC_BAB
+        // If adding modifier to this weapons DYNAMIC_BAB, update the DYNAMIC_BAB to this weapons name
         for (V4Modifier modifier : weapon.getV4ModifierList().getV4Modifier())
         {
-            if (modifier.getTargetID().equals("BAB " + weapon.getName()))
+            if (modifier.getTargetID().equals(StringConstants.DYNAMIC_BAB + weapon.getName()))
             {
                 modifier.setTargetID(StateIDs.THIS_WEAPON_BAB.toString());
             }

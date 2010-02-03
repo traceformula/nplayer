@@ -5,6 +5,7 @@ import static rpg.swingx.ColorConstants.STANDARD_BACKGROUND;
 import rpg.swingx.JBorderLayoutPanel;
 import rpg.swingx.JGradientPanel;
 import rpg.swingx.JTransparentPanel;
+import rpg.swingx.ColorConstants;
 import rpg.v4.client.gui.control.contentview.ContentManager;
 import rpg.v4.client.gui.control.information.BottomBar;
 import rpg.v4.client.gui.control.navigation.NavigationEnum;
@@ -14,6 +15,7 @@ import rpg.v4.client.gui.util.WelcomeMessage;
 import rpg.v4.client.gui.util.image.ImageKit;
 
 import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
 import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.MouseEvent;
@@ -162,6 +164,11 @@ public class GameMasterFrame extends JFrame
     public static void main(String[] args)
     {
         configureLogger();
+
+        UIDefaults uidefs = UIManager.getLookAndFeelDefaults();
+		uidefs.put("SplitPane.background", new ColorUIResource(ColorConstants.STANDARD_BACKGROUND));
+		uidefs.put("SplitPaneDivider.border", BorderFactory.createMatteBorder(1,0,1,0,ColorConstants.BLACK));
+
         frame = new GameMasterFrame();
     }
 

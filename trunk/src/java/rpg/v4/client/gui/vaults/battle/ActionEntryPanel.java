@@ -85,14 +85,14 @@ public class ActionEntryPanel extends JTransparentPanel
             weaponEntry = new WeaponEntry(entity);
             hBox.add(weaponEntry.getJComponent());
 
-            // Need the usual state and any weapon BAB state
+            // Need the usual state and any weapon DYNAMIC_BAB state
             babStateEntry = new BabStateEntry((StringPicker) weaponEntry.getJComponent(), entity);
             hBox.add(LabelFactory.createHeaderLabelNonPadded(" "));
             hBox.add(babStateEntry.getJComponent());
             hBox.add(LabelFactory.createHeaderLabelNonPadded("+"));
         }
 
-        // Need the usual state and any weapon BAB state
+        // Need the usual state and any weapon DYNAMIC_BAB state
         String attackStateID = v4GenericAction.getAttack().getAttackerStateID();
         attackStateEntry = new StateEntry(entity.getState(attackStateID));
         hBox.add(attackStateEntry.getJComponent());

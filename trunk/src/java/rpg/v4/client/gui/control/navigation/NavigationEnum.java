@@ -4,6 +4,7 @@ import rpg.swingx.JTransparentPanel;
 import rpg.v4.client.gui.edit.CharacterEdit;
 import rpg.v4.client.gui.edit.CharacterInventoryEdit;
 import rpg.v4.client.gui.edit.GroupEdit;
+import rpg.v4.client.gui.edit.CharacterFeatEdit;
 import rpg.v4.client.gui.forge.classes.ClassForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.ActionForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.FeatForgePanel;
@@ -27,7 +28,8 @@ public enum NavigationEnum
     HOME("Home", "Home", "Home"),
     CHARACTER_OVERVIEW("CharacterOverview", "Characters", "Character"),
     CHARACTER_EDIT("EditCharacter", "Character", "Character"),
-    CHARACTER_INVENOTYR_EDIT("EditInventory", "Inventory", "Inventory"),
+    CHARACTER_INVENTORY_EDIT("EditInventory", "Inventory", "Inventory"),
+    CHARACTER_FEAT_EDIT("EditFeats", "Feats", "Feats"),
     CHARACTER_ANALYTICS("AnalyseCharacter", "Analytics", "Analytics"),
     GROUP_OVERVIEW("GroupOverview", "Groups", "Groups"),
     GROUP_VAULT("GroupVault", "Groups", "Groups"),
@@ -107,7 +109,8 @@ public enum NavigationEnum
         NAVIGATION_SIDEBAR_LINKS.add(DONATE);
 
         CHARACTER_TABS.add(CHARACTER_EDIT);
-        CHARACTER_TABS.add(CHARACTER_INVENOTYR_EDIT);
+        CHARACTER_TABS.add(CHARACTER_INVENTORY_EDIT);
+        CHARACTER_TABS.add(CHARACTER_FEAT_EDIT);
         //CHARACTER_TABS.add(CHARACTER_ANALYTICS);
 
         //FORGE_TABS.add(FORGE_VAULT);
@@ -125,7 +128,8 @@ public enum NavigationEnum
         // Set up content panels
         HOME.setContentPanel(new HomeView(HOME.getDisplayName()));
         CHARACTER_EDIT.setContentPanel(new CharacterEdit());
-        CHARACTER_INVENOTYR_EDIT.setContentPanel(new CharacterInventoryEdit());
+        CHARACTER_INVENTORY_EDIT.setContentPanel(new CharacterInventoryEdit());
+        CHARACTER_FEAT_EDIT.setContentPanel(new CharacterFeatEdit());
         CHARACTER_OVERVIEW.setContentPanel(new CharacterOverview());
         GROUP_VAULT.setContentPanel(new GroupVault());
         GROUP_EDIT.setContentPanel(new GroupEdit());

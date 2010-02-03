@@ -3,6 +3,7 @@ package rpg.v4.client.gui.edit.inventory.merchant;
 import rpg.v4.client.provider.impl.CharacterProvider;
 import rpg.v4.middleware.jaxb.V4ItemCapsule;
 import rpg.v4.middleware.util.deepcopy.FastDeepCopy;
+import rpg.v4.middleware.util.StringConstants;
 import rpg.v4.server.entity.Entity;
 
 /**
@@ -26,7 +27,7 @@ public class MerchantItemRow extends AbstractMerchantRow
         if (null != entity)
         {
             V4ItemCapsule newItem = (V4ItemCapsule) FastDeepCopy.deepCopy(item);
-            newItem.setUUID("BAB " + newItem.getName());
+            newItem.setUUID(StringConstants.DYNAMIC_BAB + newItem.getName());
             entity.getInventoryList().add(newItem);
         }
     }
