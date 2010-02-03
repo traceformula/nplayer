@@ -37,12 +37,14 @@ public class WelcomeMessage extends HudWindow
 
         JTextArea textArea = createTextArea();
         String welcomeText = "Welcome to another release of nPlayer!\n\n" +
-                "This release includes more functionality around battles, creating actions, feats and powers, and general updates to the charater sheet. Be beware, this release is NOT COMPATIBLE with the previous releases so do NOT reuse your save files.\n\n" +
-                "I hope you will enjoy it Ð please send feedback if there are anything you would like to see add, changed. etc. using the bug report tool bottom right.\n\n" +
-                "You will notice that certain things are missing, such as proper damage set up in action and control of it.\n\n" +
+                "This release sees some updates around actions - some attack logic and some feat releated:\n\n" +
+                "  - Actions: Basic attack actions can now be created and used in battle.\n\n" +
+                "  - Feats: Whilst the benefits are NOT yet being applied, you can create and add feats to you character. The benefits will be added in the next relese.\n\n" +
+                "I would also be very grateful if you spread the word about nPlayer - the more the merrier!!\n\n" +
+                "Also, for the future: the next release will fix a couple of minor bugs.\n\n" +
                 "Thanks\n\n" +
                 "Sven\n" +
-                "http://www.d20characters.com  - not updated yet but it will.";
+                "http://www.d20characters.com";
         textArea.setText(welcomeText);
 
         JScrollPane scrollPane = new JTransparentScrollPane(textArea);
