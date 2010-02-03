@@ -40,6 +40,7 @@ public class WelcomeMessage extends HudWindow
                 "This release sees some updates around actions - some attack logic and some feat releated:\n\n" +
                 "  - Actions: Basic attack actions can now be created and used in battle.\n\n" +
                 "  - Feats: Whilst the benefits are NOT yet being applied, you can create and add feats to you character. The benefits will be added in the next relese.\n\n" +
+                "  - Save files: new save file directory is created. You can copy your characters etc. in there but avoid the Race file as some new states have been added.\n\n" + 
                 "I would also be very grateful if you spread the word about nPlayer - the more the merrier!!\n\n" +
                 "Also, for the future: the next release will fix a couple of minor bugs.\n\n" +
                 "Thanks\n\n" +
