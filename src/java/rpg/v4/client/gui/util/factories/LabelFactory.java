@@ -210,7 +210,7 @@ public class LabelFactory
 
     public static JLabel createInfoLabel(String infoText)
     {
-        ImageIcon icon = ImageKit.loadImageIcon("info");
+        ImageIcon icon = ImageKit.loadImageIcon("info2");
         JLabel label = new JLabel(infoText, icon, JLabel.LEFT);
         label.setForeground(TEXT_NORMAL);
         label.setFont(PLAIN_FONT);

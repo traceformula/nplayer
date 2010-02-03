@@ -145,6 +145,11 @@ public class StringListState extends AbstractState
         return isDirty;
     }
 
+    public boolean contains(String string)
+    {
+        return stringMap.keySet().contains(string);
+    }
+
     protected void initiateSubStateList(List<String> modifierTypes)
     {
         // Don't care about sub states in this.
