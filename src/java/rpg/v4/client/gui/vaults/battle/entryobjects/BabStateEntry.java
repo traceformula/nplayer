@@ -3,6 +3,7 @@ package rpg.v4.client.gui.vaults.battle.entryobjects;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.picker.impl.StringPicker;
 import rpg.v4.middleware.jaxb.V4ItemCapsule;
+import rpg.v4.middleware.util.StringConstants;
 import rpg.v4.server.entity.Entity;
 import rpg.v4.server.state.State;
 
@@ -76,7 +77,7 @@ public class BabStateEntry implements Observer, PropertyChangeListener, GenericE
                 }
                 
                 currentWeapon = itemCapsule;
-                String babStateID = "BAB " + currentWeapon.getName();
+                String babStateID = StringConstants.DYNAMIC_BAB + currentWeapon.getName();
                 currentBABState = entity.getDynamicState(babStateID);
                 currentBABState.addObserver(this);
                 update(null, null);

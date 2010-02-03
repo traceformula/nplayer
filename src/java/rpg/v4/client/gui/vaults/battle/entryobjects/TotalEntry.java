@@ -30,7 +30,10 @@ public class TotalEntry implements PropertyChangeListener, GenericEntry
         {
             babStateLabel = (JLabel) babStateEntry.getJComponent();
             babStateLabel.addPropertyChangeListener("text", this);
-            bab = Integer.parseInt(babStateLabel.getText());
+            String selectedNumber = babStateLabel.getText();
+            if ("".equals(selectedNumber))
+                selectedNumber = "0";
+            bab = Integer.parseInt(selectedNumber);
         }
 
         if (dicePicker != null)

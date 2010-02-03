@@ -73,6 +73,20 @@ public class XMLKit
         }
     }
 
+    public static void xmlToString(Object xmlObject)
+    {
+        JAXBContext jaxbContext = null;
+        try
+        {
+            jaxbContext = JAXBContext.newInstance("rpg.v4.middleware.jaxb");
+            Marshaller entityMarshaller = jaxbContext.createMarshaller();
+            entityMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+        } catch (JAXBException e)
+        {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }
+
     protected Unmarshaller um;
     
     public XMLKit()

@@ -7,6 +7,7 @@ import rpg.v4.middleware.util.xml.XMLClassKit;
 import rpg.v4.middleware.util.xml.XMLFactory;
 import rpg.v4.middleware.util.xml.XMLRaceKit;
 import rpg.v4.middleware.util.xml.XMLStateSkeletonKit;
+import rpg.v4.middleware.util.StringConstants;
 import rpg.v4.server.entity.slot.Slot;
 import rpg.v4.server.level.LevelChangeManager;
 import rpg.v4.server.state.State;
@@ -185,8 +186,8 @@ public class Entity extends Observable implements Observer
     {
         String targetState = modifier.getTargetID();
 
-        // Ignore special BAB state
-        if (!targetState.startsWith("BAB "))
+        // Ignore special DYNAMIC_BAB state
+        if (!targetState.startsWith(StringConstants.DYNAMIC_BAB))
         {
             String modifierType = modifier.getV4ModifierType();
             String sourceID = modifier.getSourceID();
@@ -217,8 +218,8 @@ public class Entity extends Observable implements Observer
     {
         String targetState = modifier.getTargetID();
 
-        // Ignore special BAB state
-        if (!targetState.startsWith("BAB "))
+        // Ignore special DYNAMIC_BAB state
+        if (!targetState.startsWith(StringConstants.DYNAMIC_BAB))
         {
             String modifierType = modifier.getV4ModifierType();
             String sourceID = modifier.getSourceID();
@@ -333,10 +334,10 @@ public class Entity extends Observable implements Observer
             //stateMap.put(dynamicState.getStateID(), dynamicState);
             dynamicStateIDs.add(dynamicState.getStateID());
 
-            // Add the special weapon BAB if any
+            // Add the special weapon DYNAMIC_BAB if any
             for (V4Modifier modifier : weapon.getV4Weapon().getV4ModifierList().getV4Modifier())
             {
-                if (modifier.getTargetID().equals("BAB " + weapon.getName()))
+                if (modifier.getTargetID().equals(StringConstants.DYNAMIC_BAB + weapon.getName()))
                 {
                     String targetState = modifier.getTargetID();
                     String modifierType = modifier.getV4ModifierType();

@@ -23,6 +23,10 @@ public class CharacterSidePanel implements SidePanelAssociate
     private static final CharacterSidePanel SIDE_PANEL = new CharacterSidePanel();
     private SidePanel<V4EntityNameKeyPair> sidePanel;
 
+    /**
+     * Register the given panel so that when active the side panel can be shown as well
+     * @param panel
+     */
     public static void addPanelAsInvoker(JPanel panel)
     {
         SIDE_PANEL.setPanel(panel);
