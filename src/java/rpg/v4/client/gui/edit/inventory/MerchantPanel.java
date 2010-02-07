@@ -89,9 +89,13 @@ public class MerchantPanel extends JBorderLayoutPanel implements Observer
         } else
         {
             if (o == weaponList)
+            {
                 manageChange(arg, weaponRowMap, weaponBox);
-            else if (o == nonWeaponsItemList)
+            } else if (o == nonWeaponsItemList)
+            {
                 manageChange(arg, armorRowMap, armorBox);
+                manageChange(arg, itemsRowMap, itemsBox);
+            }
         }
     }
 
