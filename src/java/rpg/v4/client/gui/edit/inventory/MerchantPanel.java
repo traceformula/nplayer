@@ -1,8 +1,6 @@
 package rpg.v4.client.gui.edit.inventory;
 
-import rpg.swingx.JDarkTabbedPane;
-import rpg.swingx.JTransparentPanel;
-import rpg.swingx.JTransparentScrollPane;
+import rpg.swingx.*;
 import rpg.v4.client.gui.edit.inventory.merchant.MerchantItemRow;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.provider.impl.CharacterProvider;
@@ -21,7 +19,7 @@ import java.util.List;
  * entity's inventory. If any new items become available through the forges then these items
  * are automatically made available.
  */
-public class MerchantPanel extends JTransparentPanel implements Observer
+public class MerchantPanel extends JBorderLayoutPanel implements Observer
 {
     private Map<String, Object> weaponRowMap;
     private Map<String, Object> armorRowMap;
@@ -58,6 +56,8 @@ public class MerchantPanel extends JTransparentPanel implements Observer
 
         setBorder(BorderFactory.createEmptyBorder(10, 10, 0, 5));
         setPreferredSize(new Dimension(50,50));
+        setBackground(ColorConstants.SIDEBAR_BG);
+        setBorder(BorderFactory.createMatteBorder(0, 1, 0, 0, Color.BLACK));
     }
 
     private void addTab(String title, Box box, JTabbedPane tabbedPane)
@@ -66,7 +66,7 @@ public class MerchantPanel extends JTransparentPanel implements Observer
         panel.add(box, BorderLayout.NORTH);
 
         JTransparentScrollPane scroller = new JTransparentScrollPane(panel);
-        scroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
         tabbedPane.addTab(title, scroller);
     }
 
