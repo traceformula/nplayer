@@ -20,10 +20,15 @@ public abstract class AbstractMerchantRow extends JTransparentPanel implements M
 {
     protected AbstractMerchantRow(String labelText, String tooltip)
     {
-        JLabel itemLabel = LabelFactory.createHeaderLabel(labelText);
+        this(labelText, tooltip, 5, 5);
+    }
+
+    protected AbstractMerchantRow(String labelText, String tooltip, int topPadding, int bottomPadding)
+    {
+        JLabel itemLabel = LabelFactory.createHeaderLabel(labelText, topPadding, bottomPadding);
         itemLabel.setToolTipText(tooltip);
         itemLabel.addMouseListener(this);
-        itemLabel.addMouseListener(new MousePickListener(itemLabel));        
+        itemLabel.addMouseListener(new MousePickListener(itemLabel));
 
         Box horizontalBox = Box.createHorizontalBox();
         horizontalBox.add(itemLabel);

@@ -101,10 +101,15 @@ public class LabelFactory
 
     public static JLabel createHeaderLabel(String header)
     {
+        return createHeaderLabel(header, 3, 3);
+    }
+
+    public static JLabel createHeaderLabel(String header, int topPadding, int bottomPadding)
+    {
         JLabel label = new JLabel(header, JLabel.LEFT);
         label.setForeground(TEXT_NORMAL);
         label.setFont(HEADER_FONT_NORMAL);
-        label.setBorder(BorderFactory.createEmptyBorder(3, 10, 3, 10));
+        label.setBorder(BorderFactory.createEmptyBorder(topPadding, 10, bottomPadding, 10));
 
         return label;
     }
