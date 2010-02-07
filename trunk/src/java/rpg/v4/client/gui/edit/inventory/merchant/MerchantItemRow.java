@@ -6,6 +6,8 @@ import rpg.v4.middleware.util.deepcopy.FastDeepCopy;
 import rpg.v4.middleware.util.StringConstants;
 import rpg.v4.server.entity.Entity;
 
+import javax.swing.*;
+
 /**
  * Displays the name of an item {@link rpg.v4.middleware.jaxb.V4ItemCapsule} and allows it to be added to an {@link rpg.v4.server.entity.Entity} inventory.
  * The item is deep copied into a clone before added.
@@ -16,8 +18,9 @@ public class MerchantItemRow extends AbstractMerchantRow
 
     public MerchantItemRow(V4ItemCapsule item)
     {
-        super(item.getName(), "Click to add");
+        super(item.getName(), "Click to add", 0, 0);
         this.item = item;
+        setBorder(BorderFactory.createEmptyBorder(0,0,5,0));
     }
 
     protected void doAction()

@@ -36,7 +36,7 @@ public class CharacterInventoryEdit extends JContentRenderingPanel implements Ob
         characterInventoryPanel.add(itemListPanel, BorderLayout.CENTER);
 
         JSplitPane splitPane = new JTransparentSplitPane(JSplitPane.HORIZONTAL_SPLIT, characterInventoryPanel, merchantPanel);
-        splitPane.setDividerLocation(570);
+        splitPane.setDividerLocation(540);
 
         add(splitPane, BorderLayout.CENTER);
         CharacterProvider.provider.addObserver(this);

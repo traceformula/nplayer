@@ -57,6 +57,7 @@ public class MerchantPanel extends JTransparentPanel implements Observer
         manageChange(armorList, armorRowMap, armorBox);
 
         setBorder(BorderFactory.createEmptyBorder(10, 10, 0, 5));
+        setPreferredSize(new Dimension(50,50));
     }
 
     private void addTab(String title, Box box, JTabbedPane tabbedPane)
@@ -65,6 +66,7 @@ public class MerchantPanel extends JTransparentPanel implements Observer
         panel.add(box, BorderLayout.NORTH);
 
         JTransparentScrollPane scroller = new JTransparentScrollPane(panel);
+        scroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         tabbedPane.addTab(title, scroller);
     }
 
