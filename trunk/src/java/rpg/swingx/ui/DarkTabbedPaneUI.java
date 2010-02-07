@@ -21,7 +21,7 @@ public class DarkTabbedPaneUI extends BasicTabbedPaneUI
                                       int x, int y, int w, int h,
                                       boolean isSelected)
     {
-        g.setColor(isSelected ? ColorConstants.SIDEBAR_DARK_LINE : ColorConstants.STANDARD_BACKGROUND);
+        g.setColor(isSelected ? ColorConstants.SIDEBAR_BG : ColorConstants.INFOBAR_DIVIDER_DARK_LINE);
 
         switch (tabPlacement)
         {
@@ -46,7 +46,7 @@ public class DarkTabbedPaneUI extends BasicTabbedPaneUI
         Graphics2D g2 = (Graphics2D) g;
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING,
                             RenderingHints.VALUE_ANTIALIAS_ON);
-        g2.setColor(lightHighlight);
+        g2.setColor(Color.BLACK);
 
         switch (tabPlacement) {
           case LEFT:
@@ -122,8 +122,8 @@ public class DarkTabbedPaneUI extends BasicTabbedPaneUI
         Rectangle selRect = selectedIndex < 0? null :
                                getTabBounds(selectedIndex, calcRect);
 
-        g.setColor(Color.WHITE);
-        int y = yNormal + 2;
+        g.setColor(Color.BLACK);
+        int y = yNormal + 1;
         // Draw unbroken line if tabs are not on TOP, OR
         // selected tab is not in run adjacent to content, OR
         // selected tab is not visible (SCROLL_TAB_LAYOUT)
