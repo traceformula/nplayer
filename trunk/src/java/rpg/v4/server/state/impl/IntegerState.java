@@ -36,7 +36,7 @@ public class IntegerState extends AbstractState
     {
         for (String modifierType : modifierTypes)
         {
-            if ("Untyped".equals(modifierType))
+            if ("Untyped".equals(modifierType) || "Penalty".equals(modifierType))
             {
                 subStateList.put(modifierType,  new IntegerStackableSubState(this, modifierType));
             } else
