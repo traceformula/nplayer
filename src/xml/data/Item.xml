@@ -266,36 +266,36 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -318,36 +318,36 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -370,36 +370,36 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -422,43 +422,43 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -487,43 +487,43 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -552,43 +552,43 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -611,43 +611,43 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -670,43 +670,43 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -730,8 +730,8 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -755,8 +755,8 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -780,8 +780,8 @@
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -805,43 +805,43 @@
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -865,43 +865,43 @@
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
@@ -925,43 +925,43 @@
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Acrobatics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Athletics</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Endurance</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Stealth</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-2</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Thievery</TargetID>
             </V4_Modifier>
             <V4_Modifier>
                 <Modifier>-1</Modifier>
                 <ModifierClass>Integer</ModifierClass>
-                <SourceID>Item</SourceID>
-                <V4_ModifierType>Item</V4_ModifierType>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
                 <TargetID>Speed</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
