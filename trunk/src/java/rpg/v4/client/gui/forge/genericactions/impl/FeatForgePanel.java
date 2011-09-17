@@ -6,6 +6,7 @@ import rpg.v4.client.gui.forge.genericactions.GenericActionForgePanel;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.picker.impl.StringPicker;
 import rpg.v4.client.proxy.ClientProxyKit;
+import rpg.v4.middleware.constants.PickerConstants;
 import rpg.v4.middleware.util.collection.ObservableArrayList;
 
 import javax.swing.*;
@@ -25,32 +26,25 @@ public class FeatForgePanel extends GenericActionForgePanel
     {
 
         String[] type = {"Feat"};
+
         typePicker = new StringPicker(type);
-        addEntryPair("Type", typePicker);
-
         subTypePicker = new StringPicker("n/a");
-        addEntryPair("Sub type", subTypePicker);
-
         sourcePicker = new StringPicker("n/a");
-        addEntryPair("Source", sourcePicker);
-
         damageTypePicker = new StringPicker("n/a");
-        addEntryPair("Damage type", damageTypePicker);
-
         effectTypePicker = new StringPicker("n/a");
-        addEntryPair("Effect type", effectTypePicker);
-
         actionTypePicker = new StringPicker("No action");
-        addEntryPair("Action type", actionTypePicker);
-
         attackTypePicker = new StringPicker("n/a");
-        addEntryPair("Attack type", attackTypePicker);
-
         secondaryAttackTypePicker = new StringPicker("n/a");
-        addEntryPair("Secondary attack type", secondaryAttackTypePicker);
+        targetPicker = new StringPicker(PickerConstants.TARGET_OPTIONS);
 
-        targetPicker = new StringPicker("One creature", "You", "You or one ally", "One creature",
-                "One enemy", "One object", "Multiple enemies");
+        addEntryPair("Type", typePicker);
+        addEntryPair("Sub type", subTypePicker);
+        addEntryPair("Source", sourcePicker);
+        addEntryPair("Damage type", damageTypePicker);
+        addEntryPair("Effect type", effectTypePicker);
+        addEntryPair("Action type", actionTypePicker);
+        addEntryPair("Attack type", attackTypePicker);
+        addEntryPair("Secondary attack type", secondaryAttackTypePicker);
         addEntryPair("Target", targetPicker);
 
         attackingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
