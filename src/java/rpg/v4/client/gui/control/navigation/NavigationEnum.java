@@ -30,6 +30,7 @@ public enum NavigationEnum
     CHARACTER_EDIT("EditCharacter", "Character", "Character"),
     CHARACTER_INVENTORY_EDIT("EditInventory", "Inventory", "Inventory"),
     CHARACTER_FEAT_EDIT("EditFeats", "Feats", "Feats"),
+    CHARACTER_POWER_EDIT("EditPowers", "Powers", "Powers"),
     CHARACTER_ANALYTICS("AnalyseCharacter", "Analytics", "Analytics"),
     GROUP_OVERVIEW("GroupOverview", "Groups", "Groups"),
     GROUP_VAULT("GroupVault", "Groups", "Groups"),
@@ -111,6 +112,7 @@ public enum NavigationEnum
         CHARACTER_TABS.add(CHARACTER_EDIT);
         CHARACTER_TABS.add(CHARACTER_INVENTORY_EDIT);
         CHARACTER_TABS.add(CHARACTER_FEAT_EDIT);
+        CHARACTER_TABS.add(CHARACTER_POWER_EDIT);
         //CHARACTER_TABS.add(CHARACTER_ANALYTICS);
 
         //FORGE_TABS.add(FORGE_VAULT);

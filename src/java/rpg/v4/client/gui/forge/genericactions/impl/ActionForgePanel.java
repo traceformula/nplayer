@@ -6,6 +6,7 @@ import rpg.v4.client.gui.forge.genericactions.GenericActionForgePanel;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.picker.impl.StringPicker;
 import rpg.v4.client.proxy.ClientProxyKit;
+import rpg.v4.middleware.constants.PickerConstants;
 import rpg.v4.middleware.util.collection.ObservableArrayList;
 
 import javax.swing.*;
@@ -26,35 +27,23 @@ public class ActionForgePanel extends GenericActionForgePanel
 
         String[] type = {"Action"};
         typePicker = new StringPicker(type);
+        subTypePicker = new StringPicker(PickerConstants.SUB_TYPES);
+        sourcePicker = new StringPicker(PickerConstants.SOURCES);
+        damageTypePicker = new StringPicker(PickerConstants.DAMAGE_TYPES);
+        effectTypePicker = new StringPicker(PickerConstants.EFFECT_TYPES);
+        actionTypePicker = new StringPicker(PickerConstants.ACTION_TYPES);
+        attackTypePicker = new StringPicker(PickerConstants.ATTACK_TYPES);
+        secondaryAttackTypePicker = new StringPicker(PickerConstants.SECONDARY_ATTACK_TYPES);
+        targetPicker = new StringPicker(PickerConstants.TARGET_OPTIONS);
+
         addEntryPair("Type", typePicker);
-
-        subTypePicker = new StringPicker("At will", "Encounter", "Daily", "Utility", "n/a");
         addEntryPair("Sub type", subTypePicker);
-
-        sourcePicker = new StringPicker("Arcane", "Divine", "Martial", "Nature", "Ki", "Psionic",
-                "Elemental", "Primal", "Shadow", "n/a");
         addEntryPair("Source", sourcePicker);
-
-        damageTypePicker = new StringPicker("Acid", "Cold", "Fire", "Force", "Lightning",
-                "Necrotic", "Psion", "Psychic", "Radiant", "Thunder", "n/a");
         addEntryPair("Damage type", damageTypePicker);
-
-        effectTypePicker = new StringPicker("Charm", "Conjuration", "Fear", "Healing", "Illusion",
-                "Poison", "Polymorph", "Reliable", "Sleep", "Stance", "Teleportation", "Zone", "n/a");
         addEntryPair("Effect type", effectTypePicker);
-
-        actionTypePicker = new StringPicker("Standard", "Move", "Immediate interrupt",
-                "Immediate interrupt", "Immediate reaction", "Minor", "Free", "No action");
         addEntryPair("Action type", actionTypePicker);
-
-        attackTypePicker = new StringPicker("Melee", "Ranged", "Melee or Ranged", "Close", "Area", "Personal", "n/a");
         addEntryPair("Attack type", attackTypePicker);
-
-        secondaryAttackTypePicker = new StringPicker("Weapon", "Touch", "Sight", "Burst", "Blast", "Wall", "1", "5", "10", "15", "20", "25", "30", "n/a");
         addEntryPair("Secondary attack type", secondaryAttackTypePicker);
-
-        targetPicker = new StringPicker("One creature", "You", "You or one ally", "One creature",
-                "One enemy", "One object", "Multiple enemies");
         addEntryPair("Target", targetPicker);
 
         attackingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
