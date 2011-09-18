@@ -81,7 +81,7 @@ public class PrerequisiteForgePanel extends JTransparentPanel implements MouseLi
     {
         V4Prerequisite v4Prerequisite = prerequisiteForge.createPrerequisite();
         v4Prerequisite.setV4StateID("Race");
-        v4Prerequisite.setComparisonType("equals");
+        v4Prerequisite.setComparisonType("is");
         List<String> raceList = ClientProxyKit.CLIENT_PROXY.getAvailableRaces();
         if (null != raceList && raceList.size() > 0)
         {

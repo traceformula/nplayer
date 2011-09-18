@@ -17,7 +17,6 @@ import java.util.Observable;
 public class PrerequisiteForge extends Observable
 {
     private List<V4Prerequisite> prerequisiteList;
-    private boolean caterForWeapons = false;
 
     public PrerequisiteForge()
     {

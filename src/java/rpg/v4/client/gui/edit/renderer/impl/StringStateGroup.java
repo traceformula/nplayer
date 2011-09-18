@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class StringStateGroup extends StateGroup
 {
-    private static final List<String> GENDER_LIST, ALIGNMENT_LIST, VISION_LIST, SIZE_LIST, SETUP;
+    private static final List<String> GENDER_LIST, ALIGNMENT_LIST, VISION_LIST, SIZE_LIST, SETUP, INTEGER_LIST;
     private int addedRows = 0;
     private int columns = 2;
     private List<Box> boxes;
@@ -68,6 +68,12 @@ public class StringStateGroup extends StateGroup
         SETUP.add("Age");
         SETUP.add("Deity");
         SETUP.add("Experience points");
+
+        INTEGER_LIST = new ArrayList<String>(101);
+        for (int i = 0; i < 101; i++)
+        {
+            INTEGER_LIST.add(""+i);
+        }
     }
 
     public StringStateGroup(State state)
@@ -166,4 +172,33 @@ public class StringStateGroup extends StateGroup
             }
         }
     }
+
+    public static List<String> getList(String stateID)
+    {
+        if (stateID.equals("Race"))
+        {
+            return CLIENT_PROXY.getAvailableRaces();
+        } else if (stateID.equals("Character class"))
+        {
+            return CLIENT_PROXY.getAvailableClasses();
+        } else if (stateID.equals("Paragon path"))
+        {
+            return CLIENT_PROXY.getAvailableParagonPaths();
+        } else if (stateID.equals("Gender"))
+        {
+            return GENDER_LIST;
+        } else if (stateID.equals("Alignment"))
+        {
+            return ALIGNMENT_LIST;
+        } else if (stateID.equals("Vision"))
+        {
+            return VISION_LIST;
+        } else if (stateID.equals("Size"))
+        {
+            return SIZE_LIST;
+        }
+
+        return INTEGER_LIST;
+    }
+
 }

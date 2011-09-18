@@ -104,6 +104,7 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         v4GenericAction = ClientProxyKit.CLIENT_PROXY.createGenericAction();
         v4GenericAction.setName("");
         nameTextField.setText("");
+        prerequisiteForge.setPrerequisiteList(v4GenericAction.getV4Prerequisite());
         hitModifiersForge.setModifierList(v4GenericAction.getHitModifiers().getV4Modifier());
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
         super.actionPerformed(null);
@@ -144,6 +145,7 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         secondaryAttackTypePicker.setText(v4GenericAction.getSecondaryAttackType());
         targetPicker.setText(v4GenericAction.getTarget());
 
+        prerequisiteForge.setPrerequisiteList(v4GenericAction.getV4Prerequisite());
         hitModifiersForge.setModifierList(v4GenericAction.getHitModifiers().getV4Modifier());
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
         disallowDiceRollsBox.setSelected(v4GenericAction.getAttack().isDisalowDiceRow());
