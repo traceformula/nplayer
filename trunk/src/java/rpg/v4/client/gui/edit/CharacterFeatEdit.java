@@ -32,7 +32,7 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
 
     private Entity activeEntity;
     private JPanel featListings;
-    private Map<String, JCheckBox> featMap = new HashMap<String, JCheckBox>(100);
+    private Map<String, FeatPanel> featMap = new HashMap<String, FeatPanel>(100);
     private boolean isUpdating = false;
 
 
@@ -70,7 +70,7 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
         ObservableArrayList<String> featList = ClientProxyKit.CLIENT_PROXY.getAvailableFeats();
         for (String featName : featList)
         {
-            JCheckBox featPanel = FeatPanel.createCheckBox(featName, this);
+            FeatPanel featPanel = new FeatPanel(featName, this);
             featListings.add(featPanel);
             featMap.put(featName, featPanel);
         }
@@ -88,9 +88,9 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
         }
 
         StringListState selectedFeatsState = (StringListState) activeEntity.getStateMap().get("Selected Feats");
-        for (JCheckBox checkBox : featMap.values())
+        for (FeatPanel featPanel : featMap.values())
         {
-            checkBox.setSelected(selectedFeatsState.contains(checkBox.getText()));
+            featPanel.setSelected(selectedFeatsState.contains(featPanel.getFeatName()));
         }
 
         isUpdating = false;

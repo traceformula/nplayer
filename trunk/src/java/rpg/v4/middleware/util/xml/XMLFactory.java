@@ -230,4 +230,10 @@ public class XMLFactory
 
         return v4GenAction;
     }
+
+    public static V4Prerequisite createPrerequisite()
+    {
+        V4Prerequisite v4Prerequisite = factory.createV4Prerequisite();
+        return v4Prerequisite;
+    }
 }

@@ -94,4 +94,6 @@ public interface Proxy
     public V4ItemCapsule getArmorItemCapsule(String name);
 
     public V4GenericAction getGenericAction(String name);
+
+    public V4Prerequisite createPrerequisite();
 }

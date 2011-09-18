@@ -2,6 +2,9 @@ package rpg.v4.client.gui.forge.genericactions;
 
 import rpg.swingx.JTransparentPanel;
 import rpg.v4.client.gui.forge.AbstractForgePanel;
+import rpg.v4.client.gui.forge.genericactions.impl.prerequisite.PrerequisiteForge;
+import rpg.v4.client.gui.forge.genericactions.impl.prerequisite.PrerequisiteForgePanel;
+import rpg.v4.client.gui.forge.genericactions.impl.prerequisite.PrerequisitePanel;
 import rpg.v4.client.gui.forge.modifier.ModifierForge;
 import rpg.v4.client.gui.forge.modifier.ModifierForgePanel;
 import rpg.v4.client.gui.util.factories.LabelFactory;
@@ -27,6 +30,8 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
             secondaryAttackTypePicker;
     protected JCheckBox disallowDiceRollsBox;
     protected ModifierForge hitModifiersForge, missModifiersForge;
+    protected PrerequisiteForge prerequisiteForge;
+
 
     public GenericActionForgePanel(ObservableArrayList<String> itemList, String defaultModifierType, String headerName)
     {
@@ -41,12 +46,16 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         ModifierForgePanel missModiferPanel = new ModifierForgePanel(missModifiersForge, defaultModifierType, "On failure:");
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
 
+        prerequisiteForge = new PrerequisiteForge();
+        PrerequisiteForgePanel prerequisiteForgePanel = new PrerequisiteForgePanel(prerequisiteForge);
+
         JLabel label = LabelFactory.createInfoLabel("Conditional modifiers to be added.");
         JPanel p = new JTransparentPanel();
         p.add(label, BorderLayout.WEST);
         p.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 0));
 
         modifierForgesListBox.add(p);
+        modifierForgesListBox.add(prerequisiteForgePanel);
         modifierForgesListBox.add(hitModiferPanel);
         modifierForgesListBox.add(missModiferPanel);
 

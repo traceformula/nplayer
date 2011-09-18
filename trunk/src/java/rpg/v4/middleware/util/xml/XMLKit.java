@@ -41,7 +41,9 @@ public class XMLKit
 
     public static File getFile(String listName)
     {
-        File file = new File(FileKit.getInstance().getBaseString() + "/"+FileKit.SAVE+"/misc/"+listName+".xml");
+        String location = FileKit.getInstance().getBaseString() + "/"+FileKit.SAVE+"/misc/"+listName+".xml";
+        logger.info("Location for xml file: " + location);
+        File file = new File(location);
         if (!file.exists())
         {
             logger.info("Could not find custom list " + listName + ", using default one. ");
