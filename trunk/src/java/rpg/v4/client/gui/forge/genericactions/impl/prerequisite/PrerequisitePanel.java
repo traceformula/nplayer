@@ -2,6 +2,7 @@ package rpg.v4.client.gui.forge.genericactions.impl.prerequisite;
 
 import rpg.swingx.JRoundedButton;
 import rpg.swingx.JTransparentPanel;
+import rpg.v4.client.gui.edit.renderer.impl.StringStateGroup;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.gui.util.picker.impl.StringPicker;
 import rpg.v4.client.proxy.ClientProxyKit;
@@ -13,6 +14,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,12 +39,12 @@ public class PrerequisitePanel extends JTransparentPanel implements MouseListene
         statePicker = new StringPicker(availableStates);
         statePicker.setText(v4Prerequisite.getV4StateID());
 
-        List<String> availableModifierTypes = ClientProxyKit.CLIENT_PROXY.getModifierTypes();
-        comparisonTypePicker = new StringPicker(availableModifierTypes);
+        comparisonTypePicker = new StringPicker("is", "is at least or greater", "contains");
         comparisonTypePicker.setText(v4Prerequisite.getComparisonType());
 
-        valuePicker = new StringPicker("1", "2", "3");
-        valuePicker.setText(v4Prerequisite.getComparisonType());
+        valuePicker = new StringPicker();
+        updateValues();
+        valuePicker.setText(v4Prerequisite.getValue());
 
         JButton removeLabel = new JRoundedButton("-");
         removeLabel.setToolTipText("Click to remove");
@@ -66,6 +68,11 @@ public class PrerequisitePanel extends JTransparentPanel implements MouseListene
         setBorder(BorderFactory.createEmptyBorder(6,0,0,0));
     }
 
+    private void updateValues()
+    {
+        valuePicker.setDataRange(StringStateGroup.getList(v4Prerequisite.getV4StateID()));
+    }
+
     public void propertyChange(PropertyChangeEvent evt)
     {
         Object source = evt.getSource();
@@ -81,8 +88,7 @@ public class PrerequisitePanel extends JTransparentPanel implements MouseListene
         } else if (source == statePicker)
         {
             v4Prerequisite.setV4StateID(text);
-
-            // Todo: change value pickers and comparison type pickers to something sensible for state picked
+            updateValues();
         }
     }
         
