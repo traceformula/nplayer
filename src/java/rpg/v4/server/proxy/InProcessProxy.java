@@ -161,6 +161,11 @@ public class InProcessProxy implements Proxy
         return XMLActionKit.instance().getGenericAction(name);
     }
 
+    public V4Prerequisite createPrerequisite()
+    {
+        return XMLFactory.createPrerequisite();
+    }
+
     public ObservableArrayList<String> getAvailableParagonPaths()
     {
         return XMLClassKit.instance().getAvailableParagonPaths();

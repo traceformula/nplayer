@@ -45,6 +45,11 @@ public class XMLActionKit extends XMLKit
         powerNames = extractNames(powerList);
         actionNames = extractNames(actionList);
         featNames = extractNames(featList);
+        logger.info("XMLActionKit finished loading.");
+        for (String string : featNames)
+        {
+            logger.info("Feat: " + string);
+        }
     }
 
     private ObservableArrayList<String> extractNames(V4GenericActionList genericActionrList)

@@ -73,6 +73,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link V4Prerequisite }
+     *
+     */
+    public V4Prerequisite createV4Prerequisite() {
+        return new V4Prerequisite();
+    }
+
+    /**
      * Create an instance of {@link V4Power.Attack }
      * 
      */

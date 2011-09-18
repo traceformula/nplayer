@@ -865,4 +865,16 @@ AbilityModifier - get modifier from ability</xs:documentation>
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
+    <xs:element name="V4_Prerequisite">
+		<xs:annotation>
+			<xs:documentation>State prereqs for actions (feats, powers, etc)</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="V4_StateID"/>
+				<xs:element name="ComparisonType" type="xs:string"/>
+				<xs:element name="Value" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>

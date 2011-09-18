@@ -154,6 +154,11 @@ public class InProcessProxy implements Proxy
         return serverProxy.getGenericAction(name);
     }
 
+    public V4Prerequisite createPrerequisite()
+    {
+        return serverProxy.createPrerequisite();
+    }
+
     public ObservableArrayList<String> getAvailableParagonPaths()
     {
         return serverProxy.getAvailableParagonPaths();
