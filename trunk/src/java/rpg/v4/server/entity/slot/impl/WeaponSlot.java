@@ -62,6 +62,7 @@ public class WeaponSlot extends AbstractSlot
     private void applySpecialProperties(boolean isAdding)
     {
         V4Weapon weapon = equippedObject.getV4Weapon();
+        logger.info("Weapon: " + weapon.getName());
         super.applySpecialProperties(weapon.getV4ModifierList().getV4Modifier(), isAdding);
     }
 

@@ -1,6 +1,7 @@
 package rpg.v4.server.entity;
 
 
+import org.apache.log4j.Logger;
 import rpg.v4.middleware.jaxb.V4BodyPart;
 import rpg.v4.middleware.jaxb.V4ItemCapsule;
 import rpg.v4.middleware.jaxb.V4Race;
@@ -25,6 +26,7 @@ import java.util.Map;
  */
 public class EquipmentSlotManager
 {
+    private static Logger logger = Logger.getLogger(EquipmentSlotManager.class);
     private Entity entity;
     private List<MultiSlot> slotList;
 
@@ -40,9 +42,14 @@ public class EquipmentSlotManager
 
         for (MultiSlot slot : slotList)
         {
-            if (item == slot.getEquippedObject())
+            V4ItemCapsule equippedObject = slot.getEquippedObject();
+
+            if (null != equippedObject)
             {
-                slots.add(slot);
+                if (item == equippedObject || item.equals(equippedObject) || item.getName().equals(equippedObject.getName()))
+                {
+                    slots.add(slot);
+                }
             }
         }
         return slots;
@@ -71,7 +78,7 @@ public class EquipmentSlotManager
                 }
             }
         }
-        
+
         return slotList;
     }
 
@@ -192,6 +199,7 @@ public class EquipmentSlotManager
 
         for (MultiSlot slot : slotList)
         {
+            logger.info("Slot: " + slot.toString());
             List<V4ItemCapsule> unequippedObjects = slot.unequip();
             map.put(slot.getName(), unequippedObjects);
         }

@@ -116,7 +116,6 @@ public class FeatPanel extends JTransparentPanel implements Observer
                     individualPass = stateTotal.equals(value);
                 } else if ("is at least or greater".equals(comparison))
                 {
-                    logger.info("stateTotal: " + stateTotal +", value: " + value);
                     individualPass = stateTotal >= value;
                 } else if ("contains".equals(comparison))
                 {
@@ -139,7 +138,6 @@ public class FeatPanel extends JTransparentPanel implements Observer
         // Now act on the boolean deduced
         checkBox.setEnabled(isPass);
         Color bgColor = isPass ? Color.GREEN : Color.RED;
-        logger.info("Prereqs pass: ["+isPass+"] for " + feat.getName());
     }
 
     public void update(Observable o, Object arg)

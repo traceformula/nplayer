@@ -1,5 +1,6 @@
 package rpg.v4.server.state;
 
+import org.apache.log4j.Logger;
 import rpg.v4.middleware.jaxb.V4Function;
 import rpg.v4.middleware.jaxb.V4State;
 import rpg.v4.middleware.util.deepcopy.FastDeepCopy;
@@ -13,6 +14,7 @@ import java.util.*;
  */
 public abstract class AbstractState extends Observable implements State, Observer, Serializable
 {
+    private static Logger logger = Logger.getLogger(AbstractState.class);
     private String displayName;
     private String category;
     private String stateID;
@@ -135,6 +137,11 @@ public abstract class AbstractState extends Observable implements State, Observe
         }
 
         SubState subState = subStateList.get(modifierType);
+        logger.info("Name: " + displayName + ", " +
+                category + ", " +
+                stateID + ", " +
+                type + ", " +
+                subType);
         Object removedModifier = subState.removeModifier(source);
 
         setChanged();
@@ -180,7 +187,7 @@ public abstract class AbstractState extends Observable implements State, Observe
             }
         }
 
-        buffer.append(") ");        
+        buffer.append(") ");
         return buffer.toString();
     }
 
