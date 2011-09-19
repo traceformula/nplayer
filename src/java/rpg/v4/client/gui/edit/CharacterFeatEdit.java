@@ -49,7 +49,9 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
         featListings = new JTransparentPanel();
         featListings.setLayout(new FlowLayout(FlowLayout.LEFT));
         featListings.setPreferredSize(new Dimension(300,300));
-        add(featListings, BorderLayout.CENTER);
+        JTransparentPanel p = new JTransparentPanel();
+        p.add(featListings, BorderLayout.NORTH);
+        add(p, BorderLayout.CENTER);
 
         ObservableArrayList<String> featList = ClientProxyKit.CLIENT_PROXY.getAvailableFeats();
         featList.addObserver(this);
@@ -65,13 +67,15 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
     {
         featListings.removeAll();
         featMap.clear();
-        featListings.setLayout(new FlowLayout(FlowLayout.LEFT));
+        featListings.setLayout(new GridLayout(0, 4));
         featListings.setPreferredSize(new Dimension(300,300));
         ObservableArrayList<String> featList = ClientProxyKit.CLIENT_PROXY.getAvailableFeats();
         for (String featName : featList)
         {
             FeatPanel featPanel = new FeatPanel(featName, this);
-            featListings.add(featPanel);
+            JPanel p = new JTransparentPanel();
+            p.add(featPanel, BorderLayout.NORTH);
+            featListings.add(p);
             featMap.put(featName, featPanel);
         }
 

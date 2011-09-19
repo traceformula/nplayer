@@ -134,6 +134,13 @@ public class LabelFactory
         return label;
     }
 
+    public static JLabel createSmallLightHeaderLabel(String header)
+    {
+        JLabel label = createSmallDarkHeaderLabel(header);
+        label.setForeground(TEXT_NORMAL);
+        return label;
+    }
+
     public static JLabel createSmallDarkHeaderLabel(String header)
     {
         JLabel label = new JLabel(header, JLabel.LEFT);
