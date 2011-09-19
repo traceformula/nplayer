@@ -106,6 +106,7 @@ public class ItemContextMenuListener implements MouseListener, ActionListener
                 }
             }
 
+            // isEquipped returns a list. If empty, then item is equipped.
             boolean isEquipped = ! entity.getEquipmentSlotManager().isEquipped(item).isEmpty();
             unequipItem.setEnabled(isEquipped);
             popupMenu.add(unequipItem);
