@@ -221,8 +221,8 @@ public class StringPicker extends JLabel implements Picker, MouseListener, Obser
                 if (data.size() > 0)
                 {
                 menuItem.setBackground(ColorConstants.BLUE_HIGHLIGHT);
-                menuItem.setFont(FontConstants.BOLD_FONT);
-                    menuItem.addActionListener(pickerListener);
+                menuItem.setFont(FontConstants.HEADER_FONT_SMALL);
+                menuItem.addActionListener(pickerListener);
                 } else
                 {
                 menuItem.setBackground(ColorConstants.BLUE_HIGHLIGHT);

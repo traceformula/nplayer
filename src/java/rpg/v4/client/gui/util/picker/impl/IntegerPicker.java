@@ -228,7 +228,7 @@ public class IntegerPicker extends JLabel implements Picker, MouseListener
             if (data.size() > 0)
             {
                 menuItem.setBackground(ColorConstants.BLUE_HIGHLIGHT);
-                menuItem.setFont(FontConstants.BOLD_FONT);
+                menuItem.setFont(FontConstants.HEADER_FONT_SMALL);
                 menuItem.addActionListener(pickerListener);
             } else
             {

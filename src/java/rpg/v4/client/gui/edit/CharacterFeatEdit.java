@@ -8,7 +8,6 @@ import rpg.v4.client.gui.edit.feats.FeatPanel;
 import rpg.v4.client.proxy.ClientProxyKit;
 import rpg.v4.server.entity.Entity;
 import rpg.v4.server.state.State;
-import rpg.v4.server.state.impl.StringState;
 import rpg.v4.server.state.impl.StringListState;
 import rpg.v4.middleware.util.collection.ObservableArrayList;
 
@@ -67,7 +66,7 @@ public class CharacterFeatEdit extends JContentRenderingPanel implements Observe
     {
         featListings.removeAll();
         featMap.clear();
-        featListings.setLayout(new GridLayout(0, 4));
+        featListings.setLayout(new TopToBottomGridLayout(0, 4));
         featListings.setPreferredSize(new Dimension(300,300));
         ObservableArrayList<String> featList = ClientProxyKit.CLIENT_PROXY.getAvailableFeats();
         for (String featName : featList)

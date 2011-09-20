@@ -473,16 +473,17 @@ public class TopToBottomGridLayout implements LayoutManager, java.io.Serializabl
             w = (w - (ncols - 1) * hgap) / ncols;
             h = (h - (nrows - 1) * vgap) / nrows;
 
+            int i = 0;
             if (ltr)
             {
                 for (int c = 0, x = insets.left; c < ncols; c++, x += w + hgap)
                 {
                     for (int r = 0, y = insets.top; r < nrows; r++, y += h + vgap)
                     {
-                        int i = r * ncols + c;
                         if (i < ncomponents)
                         {
                             parent.getComponent(i).setBounds(x, y, w, h);
+                            i++;
                         }
                     }
                 }
@@ -492,10 +493,10 @@ public class TopToBottomGridLayout implements LayoutManager, java.io.Serializabl
                 {
                     for (int r = 0, y = insets.top; r < nrows; r++, y += h + vgap)
                     {
-                        int i = r * ncols + c;
                         if (i < ncomponents)
                         {
                             parent.getComponent(i).setBounds(x, y, w, h);
+                            i++;
                         }
                     }
                 }

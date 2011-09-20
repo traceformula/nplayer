@@ -49,12 +49,6 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         prerequisiteForge = new PrerequisiteForge();
         PrerequisiteForgePanel prerequisiteForgePanel = new PrerequisiteForgePanel(prerequisiteForge);
 
-        JLabel label = LabelFactory.createInfoLabel("Conditional modifiers to be added.");
-        JPanel p = new JTransparentPanel();
-        p.add(label, BorderLayout.WEST);
-        p.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 0));
-
-        modifierForgesListBox.add(p);
         modifierForgesListBox.add(prerequisiteForgePanel);
         modifierForgesListBox.add(hitModiferPanel);
         modifierForgesListBox.add(missModiferPanel);

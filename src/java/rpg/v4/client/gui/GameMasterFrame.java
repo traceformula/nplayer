@@ -17,6 +17,7 @@ import rpg.v4.client.gui.util.image.ImageKit;
 import javax.swing.*;
 import javax.swing.plaf.ColorUIResource;
 import javax.swing.border.Border;
+import javax.swing.plaf.FontUIResource;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
@@ -136,7 +137,7 @@ public class GameMasterFrame extends JFrame
     private void setBasicGUIProperties()
     {
         // Set tooltip display time to 30 seconds. There is only one tooltipmanager
-        // for every apaplication => shared instance for all containers
+        // for every application => shared instance for all containers
         ToolTipManager manager = ToolTipManager.sharedInstance();
         manager.setDismissDelay(30000);
         this.setSize(WIDTH, HEIGHT);
