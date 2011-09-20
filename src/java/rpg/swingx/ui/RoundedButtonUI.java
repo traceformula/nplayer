@@ -138,7 +138,7 @@ public class RoundedButtonUI extends BasicButtonUI
     {
         boolean isPressed = button.getModel().isPressed();
         Color topColor = isPressed ? TOP_PRESSED_COLOR : TOP_COLOR;
-        Color bottomColor = isPressed ? BOTTOM_PRESSED_COLOR : BOTTOM_COLOR;
+        Color bottomColor = isPressed ? BOTTOM_PRESSED_COLOR : button.isEnabled() ? BOTTOM_COLOR : TOP_COLOR;
         int bottomY = button.getHeight() - lineBorderWidth * 2;
         return new GradientPaint(0, lineBorderWidth, topColor, 0, bottomY, bottomColor);
     }

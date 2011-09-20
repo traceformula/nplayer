@@ -69,7 +69,7 @@ public class JRoundedButton extends JButton implements MouseListener
             setBorder(BorderFactory.createEmptyBorder(3,7,6,7));
         } else
         {
-            setBorder(BorderFactory.createEmptyBorder(6,10,8,10));
+            setBorder(BorderFactory.createEmptyBorder(4,8,5,8));
         }
         addMouseListener(this);
     }
