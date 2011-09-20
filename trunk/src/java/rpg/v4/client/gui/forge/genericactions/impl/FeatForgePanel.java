@@ -38,14 +38,14 @@ public class FeatForgePanel extends GenericActionForgePanel
         targetPicker = new StringPicker(PickerConstants.TARGET_OPTIONS);
 
         addEntryPair("Type", typePicker);
-        addEntryPair("Sub type", subTypePicker);
-        addEntryPair("Source", sourcePicker);
-        addEntryPair("Damage type", damageTypePicker);
-        addEntryPair("Effect type", effectTypePicker);
-        addEntryPair("Action type", actionTypePicker);
-        addEntryPair("Attack type", attackTypePicker);
-        addEntryPair("Secondary attack type", secondaryAttackTypePicker);
-        addEntryPair("Target", targetPicker);
+        //addEntryPair("Sub type", subTypePicker);
+        //addEntryPair("Source", sourcePicker);
+        //addEntryPair("Damage type", damageTypePicker);
+        //addEntryPair("Effect type", effectTypePicker);
+        //addEntryPair("Action type", actionTypePicker);
+        //addEntryPair("Attack type", attackTypePicker);
+        //addEntryPair("Secondary attack type", secondaryAttackTypePicker);
+        //addEntryPair("Target", targetPicker);
 
         attackingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
         defendingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
@@ -56,10 +56,10 @@ public class FeatForgePanel extends GenericActionForgePanel
         hBox.add(defendingStatePicker);
         JTransparentPanel p = new JTransparentPanel();
         p.add(hBox, BorderLayout.WEST);
-        addEntryPair("Check", p);
+        //addEntryPair("Check", p);
 
         disallowDiceRollsBox = HudWidgetFactory.createHudCheckBox("");
-        addEntryPair("Disallow dice roll", disallowDiceRollsBox);
+        //addEntryPair("Disallow dice roll", disallowDiceRollsBox);
     }
 
     @Override

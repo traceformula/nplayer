@@ -5,6 +5,7 @@ import rpg.v4.client.gui.edit.CharacterEdit;
 import rpg.v4.client.gui.edit.CharacterInventoryEdit;
 import rpg.v4.client.gui.edit.GroupEdit;
 import rpg.v4.client.gui.edit.CharacterFeatEdit;
+import rpg.v4.client.gui.edit.CharacterStateDisplayer;
 import rpg.v4.client.gui.forge.classes.ClassForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.ActionForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.FeatForgePanel;
@@ -30,6 +31,7 @@ public enum NavigationEnum
     CHARACTER_EDIT("EditCharacter", "Character", "Character"),
     CHARACTER_INVENTORY_EDIT("EditInventory", "Inventory", "Inventory"),
     CHARACTER_FEAT_EDIT("EditFeats", "Feats", "Feats"),
+    CHARACTER_STATE_LIST("ViewStates", "States", "States"),
     CHARACTER_POWER_EDIT("EditPowers", "Powers", "Powers"),
     CHARACTER_ANALYTICS("AnalyseCharacter", "Analytics", "Analytics"),
     GROUP_OVERVIEW("GroupOverview", "Groups", "Groups"),
@@ -113,6 +115,7 @@ public enum NavigationEnum
         CHARACTER_TABS.add(CHARACTER_INVENTORY_EDIT);
         CHARACTER_TABS.add(CHARACTER_FEAT_EDIT);
         CHARACTER_TABS.add(CHARACTER_POWER_EDIT);
+        CHARACTER_TABS.add(CHARACTER_STATE_LIST);
         //CHARACTER_TABS.add(CHARACTER_ANALYTICS);
 
         //FORGE_TABS.add(FORGE_VAULT);
@@ -132,6 +135,7 @@ public enum NavigationEnum
         CHARACTER_EDIT.setContentPanel(new CharacterEdit());
         CHARACTER_INVENTORY_EDIT.setContentPanel(new CharacterInventoryEdit());
         CHARACTER_FEAT_EDIT.setContentPanel(new CharacterFeatEdit());
+        CHARACTER_STATE_LIST.setContentPanel(new CharacterStateDisplayer());
         CHARACTER_OVERVIEW.setContentPanel(new CharacterOverview());
         GROUP_VAULT.setContentPanel(new GroupVault());
         GROUP_EDIT.setContentPanel(new GroupEdit());
