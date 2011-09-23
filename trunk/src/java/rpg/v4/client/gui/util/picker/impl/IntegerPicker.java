@@ -2,6 +2,7 @@ package rpg.v4.client.gui.util.picker.impl;
 
 import org.apache.log4j.Logger;
 import rpg.swingx.ColorConstants;
+import rpg.v4.client.gui.edit.TopToBottomGridLayout;
 import rpg.v4.client.gui.util.picker.Picker;
 import rpg.v4.client.gui.util.picker.listener.PickerListener;
 import rpg.v4.middleware.constants.FontConstants;
@@ -270,7 +271,7 @@ public class IntegerPicker extends JLabel implements Picker, MouseListener
 
         popUpMenu = new JPopupMenu();
 
-        GridLayout grid = new GridLayout(0, chooseBestColumnSize(), 1, 1);
+        TopToBottomGridLayout grid = new TopToBottomGridLayout(0, chooseBestColumnSize(), 1, 1);
         popUpMenu.setLayout(grid);
         popUpMenu.setBackground(ColorConstants.BLUE_HIGHLIGHT);
     }
