@@ -1,12 +1,15 @@
 package rpg.v4.client.gui.edit;
 
 import org.apache.log4j.Logger;
+import rpg.swingx.ColorConstants;
 import rpg.swingx.JContentRenderingPanel;
 import rpg.swingx.JTransparentPanel;
 import rpg.v4.client.gui.util.factories.LabelFactory;
 import rpg.v4.client.provider.impl.CharacterProvider;
 import rpg.v4.client.proxy.ClientProxyKit;
+import rpg.v4.middleware.constants.FontConstants;
 import rpg.v4.server.entity.Entity;
+import rpg.v4.server.state.State;
 
 import javax.swing.*;
 import java.awt.*;
@@ -34,6 +37,15 @@ public class CharacterStateDisplayer extends JContentRenderingPanel implements O
         add(label, BorderLayout.NORTH);
 
         stateListings = new JTransparentPanel();
+        stateListings.setLayout(new TopToBottomGridLayout(0, 4));
+        stateListings.setBorder(BorderFactory.createEmptyBorder(3, 10, 3, 10));
+        // Static states
+        for (String stateID : ClientProxyKit.CLIENT_PROXY.getAvailableStates())
+        {
+            stateListings.add(new JStateLabel(stateID));
+        }
+
+
         JTransparentPanel p = new JTransparentPanel();
         p.add(stateListings, BorderLayout.NORTH);
 
@@ -80,23 +92,12 @@ public class CharacterStateDisplayer extends JContentRenderingPanel implements O
 
     private void updateStates()
     {
-        stateListings.removeAll();
-        stateListings.setLayout(new TopToBottomGridLayout(0, 4));
-        stateListings.setBorder(BorderFactory.createEmptyBorder(3, 10, 3, 10));
+        //stateListings.removeAll();
 
         dynamicStateListings.removeAll();
         dynamicStateListings.setLayout(new TopToBottomGridLayout(0, 4));
         dynamicStateListings.setBorder(BorderFactory.createEmptyBorder(3, 10, 3, 10));
 
-        // Static states
-        for (String stateID : ClientProxyKit.CLIENT_PROXY.getAvailableStates())
-        {
-            String text = stateID + " = " + (activeEntity != null ? activeEntity.getState(stateID).getTotal() : " ");
-            JLabel label = LabelFactory.createSmallLightHeaderLabel(text);
-            label.setToolTipText(text);
-            label.setPreferredSize(new Dimension(50, 10));
-            stateListings.add(label);
-        }
 
         // Dynamic states
         if (activeEntity != null)
@@ -131,5 +132,53 @@ public class CharacterStateDisplayer extends JContentRenderingPanel implements O
         activeEntity = entity;
         activeEntity.getDynamicStateIDs().addObserver(this);
         updateStates();
+    }
+
+    private class JStateLabel extends JLabel implements Observer
+    {
+
+        private String stateID;
+        private State state;
+
+        public JStateLabel(String stateID)
+        {
+            super("", JLabel.LEFT);
+            this.stateID = stateID;
+            this.setPreferredSize(new Dimension(50, 10));
+            this.setForeground(ColorConstants.TEXT_NORMAL);
+            this.setFont(FontConstants.HEADER_FONT_SMALL);
+
+            if (activeEntity != null)
+            {
+                state = activeEntity.getState(stateID);
+                state.addObserver(this);
+            }
+
+            CharacterProvider.provider.addObserver(this);
+
+            this.updateText();
+        }
+
+        private void updateText()
+        {
+            String text = stateID + " = " + (state != null ? state.getTotal() : " ");
+            setText(text);
+            setToolTipText(text);
+        }
+
+        public void update(Observable o, Object arg)
+        {
+            if (arg instanceof Entity)
+            {
+                if (null != state)
+                    state.deleteObserver(this);
+
+                state = activeEntity.getState(stateID);
+                state.addObserver(this);
+
+            }
+
+            updateText();
+        }
     }
 }
