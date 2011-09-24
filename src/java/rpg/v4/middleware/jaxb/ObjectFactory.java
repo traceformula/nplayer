@@ -42,7 +42,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4StateSubTypeList }
-     * 
+     *
      */
     public V4StateSubTypeList createV4StateSubTypeList() {
         return new V4StateSubTypeList();
@@ -50,7 +50,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericAction.MissModifiers }
-     * 
+     *
      */
     public V4GenericAction.MissModifiers createV4GenericActionMissModifiers() {
         return new V4GenericAction.MissModifiers();
@@ -58,7 +58,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4WeaponList }
-     * 
+     *
      */
     public V4WeaponList createV4WeaponList() {
         return new V4WeaponList();
@@ -66,7 +66,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ItemCapsule }
-     * 
+     *
      */
     public V4ItemCapsule createV4ItemCapsule() {
         return new V4ItemCapsule();
@@ -82,7 +82,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Power.Attack }
-     * 
+     *
      */
     public V4Power.Attack createV4PowerAttack() {
         return new V4Power.Attack();
@@ -90,7 +90,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Function }
-     * 
+     *
      */
     public V4Function createV4Function() {
         return new V4Function();
@@ -98,7 +98,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Entity.V4Inventory }
-     * 
+     *
      */
     public V4Entity.V4Inventory createV4EntityV4Inventory() {
         return new V4Entity.V4Inventory();
@@ -106,7 +106,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4EntityCheck.Is }
-     * 
+     *
      */
     public V4EntityCheck.Is createV4EntityCheckIs() {
         return new V4EntityCheck.Is();
@@ -114,7 +114,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ModifierList }
-     * 
+     *
      */
     public V4ModifierList createV4ModifierList() {
         return new V4ModifierList();
@@ -122,7 +122,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericActionList }
-     * 
+     *
      */
     public V4GenericActionList createV4GenericActionList() {
         return new V4GenericActionList();
@@ -130,7 +130,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Level }
-     * 
+     *
      */
     public V4Level createV4Level() {
         return new V4Level();
@@ -138,7 +138,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericAction.Requirements }
-     * 
+     *
      */
     public V4GenericAction.Requirements createV4GenericActionRequirements() {
         return new V4GenericAction.Requirements();
@@ -146,7 +146,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ModifierTypeList }
-     * 
+     *
      */
     public V4ModifierTypeList createV4ModifierTypeList() {
         return new V4ModifierTypeList();
@@ -154,7 +154,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericAction.Attack }
-     * 
+     *
      */
     public V4GenericAction.Attack createV4GenericActionAttack() {
         return new V4GenericAction.Attack();
@@ -162,7 +162,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Weapon.Properties }
-     * 
+     *
      */
     public V4Weapon.Properties createV4WeaponProperties() {
         return new V4Weapon.Properties();
@@ -170,7 +170,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Weapon.Damage }
-     * 
+     *
      */
     public V4Weapon.Damage createV4WeaponDamage() {
         return new V4Weapon.Damage();
@@ -178,7 +178,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ConditionalModifier }
-     * 
+     *
      */
     public V4ConditionalModifier createV4ConditionalModifier() {
         return new V4ConditionalModifier();
@@ -186,7 +186,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Item }
-     * 
+     *
      */
     public V4Item createV4Item() {
         return new V4Item();
@@ -194,7 +194,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4BodyPart }
-     * 
+     *
      */
     public V4BodyPart createV4BodyPart() {
         return new V4BodyPart();
@@ -202,7 +202,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Weapon }
-     * 
+     *
      */
     public V4Weapon createV4Weapon() {
         return new V4Weapon();
@@ -210,7 +210,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4State }
-     * 
+     *
      */
     public V4State createV4State() {
         return new V4State();
@@ -218,7 +218,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4StateSkeleton }
-     * 
+     *
      */
     public V4StateSkeleton createV4StateSkeleton() {
         return new V4StateSkeleton();
@@ -226,7 +226,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4EntityCheck }
-     * 
+     *
      */
     public V4EntityCheck createV4EntityCheck() {
         return new V4EntityCheck();
@@ -234,7 +234,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Entity }
-     * 
+     *
      */
     public V4Entity createV4Entity() {
         return new V4Entity();
@@ -242,7 +242,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericAction.HitModifiers }
-     * 
+     *
      */
     public V4GenericAction.HitModifiers createV4GenericActionHitModifiers() {
         return new V4GenericAction.HitModifiers();
@@ -250,7 +250,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Modifier }
-     * 
+     *
      */
     public V4Modifier createV4Modifier() {
         return new V4Modifier();
@@ -258,7 +258,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Race }
-     * 
+     *
      */
     public V4Race createV4Race() {
         return new V4Race();
@@ -266,7 +266,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Group }
-     * 
+     *
      */
     public V4Group createV4Group() {
         return new V4Group();
@@ -274,7 +274,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4BodyPart.CompatibleItem }
-     * 
+     *
      */
     public V4BodyPart.CompatibleItem createV4BodyPartCompatibleItem() {
         return new V4BodyPart.CompatibleItem();
@@ -282,7 +282,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4CheckCombiner }
-     * 
+     *
      */
     public V4CheckCombiner createV4CheckCombiner() {
         return new V4CheckCombiner();
@@ -290,7 +290,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Modifier.DiceModifier }
-     * 
+     *
      */
     public V4Modifier.DiceModifier createV4ModifierDiceModifier() {
         return new V4Modifier.DiceModifier();
@@ -298,7 +298,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Group.Color }
-     * 
+     *
      */
     public V4Group.Color createV4GroupColor() {
         return new V4Group.Color();
@@ -306,7 +306,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Entity.V4EquippedObjects }
-     * 
+     *
      */
     public V4Entity.V4EquippedObjects createV4EntityV4EquippedObjects() {
         return new V4Entity.V4EquippedObjects();
@@ -314,7 +314,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Power }
-     * 
+     *
      */
     public V4Power createV4Power() {
         return new V4Power();
@@ -322,7 +322,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GenericAction }
-     * 
+     *
      */
     public V4GenericAction createV4GenericAction() {
         return new V4GenericAction();
@@ -330,7 +330,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4GroupList }
-     * 
+     *
      */
     public V4GroupList createV4GroupList() {
         return new V4GroupList();
@@ -338,7 +338,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4EntityNameKeyPair }
-     * 
+     *
      */
     public V4EntityNameKeyPair createV4EntityNameKeyPair() {
         return new V4EntityNameKeyPair();
@@ -346,7 +346,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4LevelList }
-     * 
+     *
      */
     public V4LevelList createV4LevelList() {
         return new V4LevelList();
@@ -354,7 +354,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ItemList }
-     * 
+     *
      */
     public V4ItemList createV4ItemList() {
         return new V4ItemList();
@@ -362,7 +362,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4Class }
-     * 
+     *
      */
     public V4Class createV4Class() {
         return new V4Class();
@@ -370,7 +370,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4RaceList }
-     * 
+     *
      */
     public V4RaceList createV4RaceList() {
         return new V4RaceList();
@@ -378,7 +378,7 @@ public class ObjectFactory {
 
     /**
      * Create an instance of {@link V4ClassList }
-     * 
+     *
      */
     public V4ClassList createV4ClassList() {
         return new V4ClassList();
@@ -402,4 +402,12 @@ public class ObjectFactory {
         return new JAXBElement<String>(_V4StateID_QNAME, String.class, null, value);
     }
 
+
+    /**
+     * Create an instance of {@link V4Weapon.AdditionalHitModifiers }
+     *
+     */
+    public V4Weapon.AdditionalHitModifiers createV4WeaponAdditionalHitModifiers() {
+        return new V4Weapon.AdditionalHitModifiers();
+    }
 }
