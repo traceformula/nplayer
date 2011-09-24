@@ -8,6 +8,7 @@ import rpg.v4.client.gui.edit.CharacterFeatEdit;
 import rpg.v4.client.gui.edit.CharacterStateDisplayer;
 import rpg.v4.client.gui.forge.classes.ClassForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.ActionForgePanel;
+import rpg.v4.client.gui.forge.genericactions.impl.ConditionForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.FeatForgePanel;
 import rpg.v4.client.gui.forge.genericactions.impl.PowerForgePanel;
 import rpg.v4.client.gui.forge.items.ItemForgePanel;
@@ -45,6 +46,7 @@ public enum NavigationEnum
     FORGE_GENPOW_ACTIONS("ActionForge", "Action", "Action"),
     FORGE_GENPOW_POWERS("PowerForge", "Power", "Power"),
     FORGE_GENPOW_FEATS("FeatForge", "Feat", "Feat"),
+    FORGE_GENPOW_CONDITIONS("ConditionForge", "Condition", "Condition"),
     BATTLE_VAULT("BattleVault", "Battles", "Battle"),
     EMAIL_ME("Email", "Report errors or faults", "Email"),
     DONATE("Donate", "Donations", "Donate"),
@@ -126,6 +128,7 @@ public enum NavigationEnum
         FORGE_TABS.add(FORGE_GENPOW_POWERS);
         FORGE_TABS.add(FORGE_GENPOW_FEATS);
         FORGE_TABS.add(FORGE_GENPOW_ACTIONS);
+        FORGE_TABS.add(FORGE_GENPOW_CONDITIONS);
 
         GROUP_TABS.add(GROUP_VAULT);
         GROUP_TABS.add(GROUP_EDIT);
@@ -147,6 +150,7 @@ public enum NavigationEnum
         FORGE_GENPOW_POWERS.setContentPanel(new PowerForgePanel());
         FORGE_GENPOW_ACTIONS.setContentPanel(new ActionForgePanel());
         FORGE_GENPOW_FEATS.setContentPanel(new FeatForgePanel());
+        FORGE_GENPOW_CONDITIONS.setContentPanel(new ConditionForgePanel());
         FORGE_VAULT.setContentPanel(new ForgeView());
         BATTLE_VAULT.setContentPanel(new BattleVault());
         EMAIL_ME.setContentPanel(new BugReportView(EMAIL_ME.getDisplayName()));

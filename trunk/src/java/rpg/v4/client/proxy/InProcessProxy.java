@@ -219,6 +219,11 @@ public class InProcessProxy implements Proxy
         return serverProxy.getAvailablePowers();
     }
 
+    public ObservableArrayList<String> getAvailableConditions()
+    {
+        return serverProxy.getAvailableConditions();
+    }
+
     public ObservableArrayList<V4EntityNameKeyPair> getEntityInitiativeOrderList()
     {
         return serverProxy.getEntityInitiativeOrderList();

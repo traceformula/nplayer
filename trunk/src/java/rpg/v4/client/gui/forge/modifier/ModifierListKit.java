@@ -19,7 +19,7 @@ public class ModifierListKit
                                       weaponTypes = new ArrayList(8);
 
     static {
-        for (int i=-5; i < 20; i++)
+        for (int i=-20; i < 20; i++)
         {
             integerList.add(i);
         }

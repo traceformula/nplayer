@@ -107,6 +107,9 @@ public class StringStateGroup extends StateGroup
         } else if (state.getStateID().equals("Paragon path"))
         {
             block = new StringPickerRow(state, CLIENT_PROXY.getAvailableParagonPaths());
+        } else if (state.getStateID().equals("Condition"))
+        {
+            block = new StringPickerRow(state, CLIENT_PROXY.getAvailableConditions());
         } else if (state.getStateID().equals("Gender"))
         {
             block = new StringPickerRow(state, GENDER_LIST);
@@ -181,6 +184,9 @@ public class StringStateGroup extends StateGroup
         } else if (stateID.equals("Character class"))
         {
             return CLIENT_PROXY.getAvailableClasses();
+        } else if (stateID.equals("Condition"))
+        {
+            return CLIENT_PROXY.getAvailableConditions();
         } else if (stateID.equals("Paragon path"))
         {
             return CLIENT_PROXY.getAvailableParagonPaths();

@@ -226,6 +226,11 @@ public class InProcessProxy implements Proxy
         return XMLActionKit.instance().getAvailablePowers();
     }
 
+    public ObservableArrayList<String> getAvailableConditions()
+    {
+        return XMLActionKit.instance().getAvailableConditions();
+    }
+
     public ObservableArrayList<V4EntityNameKeyPair> getEntityInitiativeOrderList()
     {
         return InitiativeOrderManager.getInstance().getEntityInitiativeOrderList();
