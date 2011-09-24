@@ -25,6 +25,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Battleaxe</Name>
@@ -51,6 +54,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Flail of Strength</Name>
@@ -84,6 +90,9 @@
                 <TargetID>Strength</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Heavy flail</Name>
@@ -110,6 +119,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Spiked chain</Name>
@@ -136,6 +148,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Longsword +1</Name>
@@ -175,6 +190,9 @@
                 <TargetID>Attack damage bonus</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Handaxe +2</Name>
@@ -214,6 +232,9 @@
                 <TargetID>Attack damage bonus</TargetID>
             </V4_Modifier>
         </V4_ModifierList>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Dagger</Name>
@@ -240,6 +261,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Javelin</Name>
@@ -266,6 +290,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Mace</Name>
@@ -292,6 +319,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Sickle</Name>
@@ -318,6 +348,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Spear</Name>
@@ -344,6 +377,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Greatclub</Name>
@@ -370,6 +406,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Morningstar</Name>
@@ -396,6 +435,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Quarterstaff</Name>
@@ -422,6 +464,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Scythe</Name>
@@ -448,6 +493,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Flail</Name>
@@ -474,6 +522,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Handaxe</Name>
@@ -500,6 +551,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Longsword</Name>
@@ -526,6 +580,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Scimitar</Name>
@@ -552,6 +609,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Short sword</Name>
@@ -578,6 +638,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Throwing hammer</Name>
@@ -604,6 +667,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Warhammer</Name>
@@ -630,6 +696,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>War pick</Name>
@@ -656,6 +725,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Falchion</Name>
@@ -682,6 +754,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Glaive</Name>
@@ -708,6 +783,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Greataxe</Name>
@@ -734,6 +812,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Greatsword</Name>
@@ -760,6 +841,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Halbard</Name>
@@ -786,6 +870,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Heavy flail</Name>
@@ -812,6 +899,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Longspear</Name>
@@ -838,6 +928,9 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
     <V4_Weapon>
         <Name>Maul</Name>
@@ -864,5 +957,8 @@
             <Versatile>false</Versatile>
         </Properties>
         <V4_ModifierList/>
+        <AdditionalHitModifiers>
+            <V4_ModifierList></V4_ModifierList>
+        </AdditionalHitModifiers>
     </V4_Weapon>
 </V4_WeaponList>

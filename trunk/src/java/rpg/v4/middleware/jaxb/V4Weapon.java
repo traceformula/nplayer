@@ -96,6 +96,17 @@ import java.io.Serializable;
  *           &lt;/complexType>
  *         &lt;/element>
  *         &lt;element ref="{rgb.jaxb.character}V4_ModifierList"/>
+ *         &lt;element name="AdditionalHitModifiers">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element ref="{rgb.jaxb.character}V4_ModifierList"/>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -118,7 +129,8 @@ import java.io.Serializable;
     "category",
     "handRequirement",
     "properties",
-    "v4ModifierList"
+    "v4ModifierList",
+    "additionalHitModifiers"
 })
 @XmlRootElement(name = "V4_Weapon")
 public class V4Weapon implements Serializable {
@@ -149,6 +161,8 @@ public class V4Weapon implements Serializable {
     protected V4Weapon.Properties properties;
     @XmlElement(name = "V4_ModifierList", required = true)
     protected V4ModifierList v4ModifierList;
+    @XmlElement(name = "AdditionalHitModifiers", required = true)
+    protected V4Weapon.AdditionalHitModifiers additionalHitModifiers;
 
     /**
      * Gets the value of the name property.
@@ -428,6 +442,85 @@ public class V4Weapon implements Serializable {
      */
     public void setV4ModifierList(V4ModifierList value) {
         this.v4ModifierList = value;
+    }
+
+    /**
+     * Gets the value of the additionalHitModifiers property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link V4Weapon.AdditionalHitModifiers }
+     *     
+     */
+    public V4Weapon.AdditionalHitModifiers getAdditionalHitModifiers() {
+        return additionalHitModifiers;
+    }
+
+    /**
+     * Sets the value of the additionalHitModifiers property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link V4Weapon.AdditionalHitModifiers }
+     *     
+     */
+    public void setAdditionalHitModifiers(V4Weapon.AdditionalHitModifiers value) {
+        this.additionalHitModifiers = value;
+    }
+
+
+    /**
+     * <p>Java class for anonymous complex type.
+     * 
+     * <p>The following schema fragment specifies the expected content contained within this class.
+     * 
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element ref="{rgb.jaxb.character}V4_ModifierList"/>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     * 
+     * 
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "v4ModifierList"
+    })
+    public static class AdditionalHitModifiers implements Serializable {
+
+        @XmlElement(name = "V4_ModifierList", required = true)
+        protected V4ModifierList v4ModifierList;
+
+        /**
+         * Gets the value of the v4ModifierList property.
+         * 
+         * @return
+         *     possible object is
+         *     {@link V4ModifierList }
+         *     
+         */
+        public V4ModifierList getV4ModifierList() {
+            return v4ModifierList;
+        }
+
+        /**
+         * Sets the value of the v4ModifierList property.
+         * 
+         * @param value
+         *     allowed object is
+         *     {@link V4ModifierList }
+         *     
+         */
+        public void setV4ModifierList(V4ModifierList value) {
+            this.v4ModifierList = value;
+        }
+
     }
 
 
