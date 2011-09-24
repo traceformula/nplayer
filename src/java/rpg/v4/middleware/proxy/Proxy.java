@@ -79,6 +79,8 @@ public interface Proxy
 
     public ObservableArrayList<String> getAvailablePowers();
 
+    public ObservableArrayList<String> getAvailableConditions();
+
     public ObservableArrayList<V4EntityNameKeyPair> getEntityInitiativeOrderList();
 
     public V4Race getRace(String name);

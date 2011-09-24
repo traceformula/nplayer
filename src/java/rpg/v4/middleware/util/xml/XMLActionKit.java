@@ -16,14 +16,15 @@ import java.util.List;
  */
 public class XMLActionKit extends XMLKit
 {
-    private static final String POWER = "Power", ACTION = "Action", FEAT = "Feat";
+    private static final String POWER = "Power", ACTION = "Action", FEAT = "Feat", CONDITION = "Condition";
     private static final String POWER_FILE_NAME = "Powers",
             ACTION_FILE_NAME = "Actions",
-            FEATS_FILE_NAME = "Feats";
+            FEATS_FILE_NAME = "Feats",
+            CONDITION_FILE_NAME = "Conditions";
     private static XMLActionKit instance = new XMLActionKit();
     private static FileKit fileKit = FileKit.getInstance();
-    private static ObservableArrayList<String> powerNames, actionNames, featNames;
-    private V4GenericActionList powerList, actionList, featList;
+    private static ObservableArrayList<String> powerNames, actionNames, featNames, conditionNames;
+    private V4GenericActionList powerList, actionList, featList, conditionList;
 
     public static XMLActionKit instance()
     {
@@ -37,6 +38,7 @@ public class XMLActionKit extends XMLKit
             powerList = (V4GenericActionList) um.unmarshal(getFile(POWER_FILE_NAME));
             actionList = (V4GenericActionList) um.unmarshal(getFile(ACTION_FILE_NAME));
             featList = (V4GenericActionList) um.unmarshal(getFile(FEATS_FILE_NAME));
+            conditionList = (V4GenericActionList) um.unmarshal(getFile(CONDITION_FILE_NAME));
         } catch (JAXBException e)
         {
             e.printStackTrace();
@@ -45,11 +47,9 @@ public class XMLActionKit extends XMLKit
         powerNames = extractNames(powerList);
         actionNames = extractNames(actionList);
         featNames = extractNames(featList);
+        conditionNames = extractNames(conditionList);
+
         logger.info("XMLActionKit finished loading.");
-        for (String string : featNames)
-        {
-            logger.info("Feat: " + string);
-        }
     }
 
     private ObservableArrayList<String> extractNames(V4GenericActionList genericActionrList)
@@ -89,6 +89,12 @@ public class XMLActionKit extends XMLKit
             return (V4GenericAction) FastDeepCopy.deepCopy(v4GenericAction);
         }
 
+        v4GenericAction = getActionFromAllLists(name, conditionList.getV4GenericAction());
+        if (v4GenericAction != null)
+        {
+            return (V4GenericAction) FastDeepCopy.deepCopy(v4GenericAction);
+        }
+
         throw new IllegalStateException("Generic action '" + name + "' not found.");
     }
 
@@ -111,7 +117,7 @@ public class XMLActionKit extends XMLKit
     }
 
     /**
-     * Write power/action/feat to file, overwriting existing file if nessecary. Also, if new,
+     * Write power/action/feat to file, overwriting existing file if necessary. Also, if new,
      * add it to the corresponding names list.
      *
      * @param v4GenericAction The new power/action/feat to save
@@ -135,6 +141,11 @@ public class XMLActionKit extends XMLKit
             manageItemEntry(v4GenericAction, featNames, featList);
             saveFile = fileKit.createFile("misc/" + FEATS_FILE_NAME + ".xml");
             listToSave = featList;
+        } else if (CONDITION.equals(v4GenericAction.getType()))
+        {
+            manageItemEntry(v4GenericAction, conditionNames, conditionList);
+            saveFile = fileKit.createFile("misc/" + CONDITION_FILE_NAME + ".xml");
+            listToSave = conditionList;
         } else
         {
             throw new UnsupportedOperationException("Can not save generic action of type " + v4GenericAction.getType() + ". It must be " + POWER + ", " + FEAT + " or " + ACTION);
@@ -192,5 +203,10 @@ public class XMLActionKit extends XMLKit
     public ObservableArrayList<String> getAvailableActions()
     {
         return actionNames;
+    }
+
+    public ObservableArrayList<String> getAvailableConditions()
+    {
+        return conditionNames;
     }
 }

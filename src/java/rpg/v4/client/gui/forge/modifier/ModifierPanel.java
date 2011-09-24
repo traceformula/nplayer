@@ -32,8 +32,8 @@ public class ModifierPanel extends AbstractModifierPanel
         boolean isStringModifier = "String".equals(modifier.getModifierClass());
 
         modifierPicker = new IntegerPicker();
-        modifierPicker.setLowerBound(-5);
-        modifierPicker.setUpperBound(15);
+        modifierPicker.setLowerBound(-20);
+        modifierPicker.setUpperBound(20);
 
         modifierStringPicker = new StringPicker();
 
