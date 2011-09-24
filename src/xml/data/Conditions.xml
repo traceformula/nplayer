@@ -1,3 +1,627 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <V4_GenericActionList xmlns="rgb.jaxb.character">
+    <V4_GenericAction>
+        <Name>Deafened</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>-10</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Condition</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Perception</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Blinded</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>-10</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Condition</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Perception</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Condition</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Untyped</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Can Not Flank</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Dominated</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>Blinded</Modifier>
+                <ModifierClass>String</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Condition</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Dying</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Helpless</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Immobilized</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Marked</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Petrified</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Prone</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>2</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Untyped</V4_ModifierType>
+                <TargetID>Armor class</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-2</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Base Attack Bonus</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Restrained</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>Blinded</Modifier>
+                <ModifierClass>String</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Condition</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-2</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Base Attack Bonus</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Slowed</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Stunned</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Can Not Flank</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Immediate actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Move actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Opportunity Attacks pr turn</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Second winds</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Standard actions</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Dazed</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Condition</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Can Not Flank</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Healing surges</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Immediate actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Move actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Opportunity Attacks pr turn</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Second winds</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Surprised</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Combat Advantage - grants it</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Immediate actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Move actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Opportunity Attacks pr turn</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Second winds</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Standard actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Can Not Flank</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Unconscious</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers>
+            <V4_Modifier>
+                <Modifier>Blinded</Modifier>
+                <ModifierClass>String</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Condition</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-5</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Base defense</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Immediate actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Move actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Opportunity Attacks pr turn</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Second winds</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>-20</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID># of Standard actions</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>Blinded</Modifier>
+                <ModifierClass>String</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Condition</TargetID>
+            </V4_Modifier>
+            <V4_Modifier>
+                <Modifier>1</Modifier>
+                <ModifierClass>Integer</ModifierClass>
+                <SourceID>Penalty</SourceID>
+                <V4_ModifierType>Penalty</V4_ModifierType>
+                <TargetID>Can Not Flank</TargetID>
+            </V4_Modifier>
+        </HitModifiers>
+        <MissModifiers/>
+    </V4_GenericAction>
+    <V4_GenericAction>
+        <Name>Weakened</Name>
+        <Requirements/>
+        <Type>Condition</Type>
+        <SubType>n/a</SubType>
+        <Source>n/a</Source>
+        <DamageType>n/a</DamageType>
+        <EffectType>n/a</EffectType>
+        <ActionType>No action</ActionType>
+        <AttackType>n/a</AttackType>
+        <SecondaryAttackType>n/a</SecondaryAttackType>
+        <Target>You</Target>
+        <Attack>
+            <AttackerStateID># Second chance rolls</AttackerStateID>
+            <DefenderStateID># Second chance rolls</DefenderStateID>
+            <DisalowDiceRow>false</DisalowDiceRow>
+        </Attack>
+        <HitModifiers/>
+        <MissModifiers/>
+    </V4_GenericAction>
 </V4_GenericActionList>
