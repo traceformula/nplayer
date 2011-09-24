@@ -30,7 +30,7 @@ public class ModifierPanel extends AbstractModifierPanel
     {
         super(modifier, modifierForgePanel);
         boolean isStringModifier = "String".equals(modifier.getModifierClass());
-
+        System.out.println("ModPanel: " + modifier.getSourceID() + ", " + modifier.getModifierClass());
         modifierPicker = new IntegerPicker();
         modifierPicker.setLowerBound(-20);
         modifierPicker.setUpperBound(20);

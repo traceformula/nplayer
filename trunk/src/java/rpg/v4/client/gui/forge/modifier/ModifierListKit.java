@@ -1,5 +1,7 @@
 package rpg.v4.client.gui.forge.modifier;
 
+import rpg.v4.client.proxy.ClientProxyKit;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -43,16 +45,20 @@ public class ModifierListKit
 
     public static List getList(String listID)
     {
+        System.out.println("getList: " + listID);
         if (listID.equals("Added Armor prof.") || listID.equals("Removed Armor prof."))
             return armorTypes;
         else if (listID.equals("Added Weapon prof.") || listID.equals("Removed Weapon prof."))
             return weaponTypes;
+        else if (listID.equals("Condition"))
+            return ClientProxyKit.CLIENT_PROXY.getAvailableConditions();
         return integerList;
     }
 
     public static boolean isStringListRequired(String listID)
     {
         return listID.equals("Added Armor prof.") || listID.equals("Removed Armor prof.") ||
-                listID.equals("Added Weapon prof.") || listID.equals("Removed Weapon prof.");
+                listID.equals("Added Weapon prof.") || listID.equals("Removed Weapon prof.") ||
+                listID.equals("Condition");
     }
 }
