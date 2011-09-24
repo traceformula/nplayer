@@ -45,7 +45,6 @@ public class ModifierListKit
 
     public static List getList(String listID)
     {
-        System.out.println("getList: " + listID);
         if (listID.equals("Added Armor prof.") || listID.equals("Removed Armor prof."))
             return armorTypes;
         else if (listID.equals("Added Weapon prof.") || listID.equals("Removed Weapon prof."))

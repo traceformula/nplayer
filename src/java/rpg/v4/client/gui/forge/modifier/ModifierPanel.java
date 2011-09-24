@@ -30,7 +30,7 @@ public class ModifierPanel extends AbstractModifierPanel
     {
         super(modifier, modifierForgePanel);
         boolean isStringModifier = "String".equals(modifier.getModifierClass());
-        System.out.println("ModPanel: " + modifier.getSourceID() + ", " + modifier.getModifierClass());
+
         modifierPicker = new IntegerPicker();
         modifierPicker.setLowerBound(-20);
         modifierPicker.setUpperBound(20);
@@ -67,6 +67,8 @@ public class ModifierPanel extends AbstractModifierPanel
 
         if (isStringModifier)
         {
+            String stateTarget = stateTargetPicker.getText();
+            modifierStringPicker.setDataRange(ModifierListKit.getList(stateTarget));
             modifierStringPicker.setText((String) modifier.getModifier());
         }
         else
@@ -110,7 +112,7 @@ public class ModifierPanel extends AbstractModifierPanel
         } else if (source == modTypePicker)
         {
             modifier.setV4ModifierType(text);
-        } 
+        }
     }
 
 }
