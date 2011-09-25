@@ -28,29 +28,14 @@ public class ItemForgePanel extends AbstractForgePanel implements PropertyChange
 
     public ItemForgePanel()
     {
-        super(ClientProxyKit.CLIENT_PROXY.getAvailableItems(), "Item", "Item");
+        super(ClientProxyKit.CLIENT_PROXY.getAvailableItems(), "Item", "Item", true, false);
         v4Item = ClientProxyKit.CLIENT_PROXY.createItem();
-        modifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
         initialize();
     }
 
     private void initialize()
     {
-
-        String[] itemTypes = {"Armor", "Amulet", "Belt", "Boots", "Bracelets", "Bracers", "Brooch", "Cape", "Cloak",
-                "Gauntlets", "Glasses", "Gloves", "Hat", "Headband", "Helmet", "Lens", "Mantle",
-                "Medallion", "Necklace", "Orb", "OtherNonSpecific", "Periapt", "Phylactery", "Ring",
-                "Sandals", "Scarab", "Shirt", "Shoes", "Vest", "Vestment"};
-        typePicker = new StringPicker(itemTypes);
-        typePicker.addPropertyChangeListener("text", this);
-        addEntryPair("Type", typePicker);
-
-        subTypePicker = new StringPicker("Light", "Heavy");
-        addEntryPair("Sub type", subTypePicker);
-
-        categoryPicker = new StringPicker("Cloth Armor", "Leather Armor", "Hide Armor",
-                "Chainmail", "Scale Armor", "Plate Armor");
-        addEntryPair("Category", categoryPicker);
 
         List<String> choosableBases = new ArrayList<String>();
         choosableBases.add("None");
@@ -65,9 +50,24 @@ public class ItemForgePanel extends AbstractForgePanel implements PropertyChange
         priceTextField.setColumns(6);
         addEntryPair("Price in gp", priceTextField);
 
+        String[] itemTypes = {"Armor", "Amulet", "Belt", "Boots", "Bracelets", "Bracers", "Brooch", "Cape", "Cloak",
+                "Gauntlets", "Glasses", "Gloves", "Hat", "Headband", "Helmet", "Lens", "Mantle",
+                "Medallion", "Necklace", "Orb", "OtherNonSpecific", "Periapt", "Phylactery", "Ring",
+                "Sandals", "Scarab", "Shirt", "Shoes", "Vest", "Vestment"};
+        typePicker = new StringPicker(itemTypes);
+        typePicker.addPropertyChangeListener("text", this);
+        addEntryPair("Type", typePicker);
+
         weightTextField = LabelFactory.createTextFieldWide("");
-        weightTextField.setColumns(10);
+        weightTextField.setColumns(6);
         addEntryPair("Weight", weightTextField);
+
+        subTypePicker = new StringPicker("Light", "Heavy");
+        addEntryPair("Sub type", subTypePicker);
+
+        categoryPicker = new StringPicker("Cloth Armor", "Leather Armor", "Hide Armor",
+                "Chainmail", "Scale Armor", "Plate Armor");
+        addEntryPair("Category", categoryPicker);
 
     }
 
@@ -96,7 +96,7 @@ public class ItemForgePanel extends AbstractForgePanel implements PropertyChange
         nameTextField.setText("");
         weightTextField.setText("");
         priceTextField.setText("");
-        modifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
         super.actionPerformed(null);
     }
 
@@ -153,7 +153,7 @@ public class ItemForgePanel extends AbstractForgePanel implements PropertyChange
         subTypePicker.setText(v4Item.getSubType());
         categoryPicker.setText(v4Item.getCategory());
 
-        modifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(v4Item.getV4ModifierList().getV4Modifier());
     }
 
     @Override

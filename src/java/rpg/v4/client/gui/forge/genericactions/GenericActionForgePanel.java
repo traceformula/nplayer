@@ -35,23 +35,23 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
 
     public GenericActionForgePanel(ObservableArrayList<String> itemList, String defaultModifierType, String headerName)
     {
-        super(itemList, defaultModifierType, headerName, false);
+        super(itemList, defaultModifierType, headerName, false, false);
         v4GenericAction = ClientProxyKit.CLIENT_PROXY.createGenericAction();
 
         hitModifiersForge = new ModifierForge();
-        ModifierForgePanel hitModiferPanel = new ModifierForgePanel(hitModifiersForge, defaultModifierType, "On success:");
+        ModifierForgePanel hitModifierPanel = new ModifierForgePanel(hitModifiersForge, defaultModifierType, "On success:");
         hitModifiersForge.setModifierList(v4GenericAction.getHitModifiers().getV4Modifier());
 
         missModifiersForge = new ModifierForge();
-        ModifierForgePanel missModiferPanel = new ModifierForgePanel(missModifiersForge, defaultModifierType, "On failure:");
+        ModifierForgePanel missModifierPanel = new ModifierForgePanel(missModifiersForge, defaultModifierType, "On failure:");
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
 
         prerequisiteForge = new PrerequisiteForge();
         PrerequisiteForgePanel prerequisiteForgePanel = new PrerequisiteForgePanel(prerequisiteForge);
 
         modifierForgesListBox.add(prerequisiteForgePanel);
-        modifierForgesListBox.add(hitModiferPanel);
-        modifierForgesListBox.add(missModiferPanel);
+        modifierForgesListBox.add(hitModifierPanel);
+        modifierForgesListBox.add(missModifierPanel);
 
         initialize();
     }

@@ -99,6 +99,13 @@ public class LabelFactory
         return label;
     }
 
+    public static JLabel createHeaderLabelNoSidePadding(String header)
+    {
+        JLabel label = createHeaderLabel(header);
+        label.setBorder(BorderFactory.createEmptyBorder(3, 0, 3, 0));
+        return label;
+    }
+
     public static JLabel createHeaderLabel(String header)
     {
         return createHeaderLabel(header, 3, 3);

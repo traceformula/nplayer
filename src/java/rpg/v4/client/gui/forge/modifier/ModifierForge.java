@@ -39,7 +39,7 @@ public class ModifierForge extends Observable
         }
     }
 
-    public V4Modifier createModifer(boolean includeDice)
+    public V4Modifier createModifier(boolean includeDice)
     {
         V4Modifier mod = ClientProxyKit.CLIENT_PROXY.createModifier(includeDice);
         modifierList.add(mod);
