@@ -31,6 +31,10 @@ public class ConditionForgePanel extends GenericActionForgePanel
 
         String[] type = {"Condition"};
 
+        prerequisiteForgePanel.setVisible(false);
+        missModifierPanel.setVisible(false);
+        hitModifierPanel.setHeader("Modifiers to apply to affected character:");
+
         typePicker = new StringPicker(type);
         subTypePicker = new StringPicker("n/a");
         sourcePicker = new StringPicker("n/a");

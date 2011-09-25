@@ -41,26 +41,18 @@ public class PrerequisiteForgePanel extends JTransparentPanel implements MouseLi
         JButton addModifierButton = new JRoundedButton("+ Prerequisite");
         addModifierButton.addMouseListener(this);
 
-        Box hBox = Box.createHorizontalBox();
-        hBox.add(addModifierButton);
-        hBox.add(Box.createHorizontalStrut(10));
-
         JTransparentPanel buttonPanel = new JTransparentPanel();
-        buttonPanel.add(hBox, BorderLayout.WEST);
+        buttonPanel.add(addModifierButton, BorderLayout.WEST);
 
         JTransparentPanel modifierPanel = new JTransparentPanel();
         modifierPanel.add(buttonPanel, BorderLayout.NORTH);
         modifierPanel.add(verticalBoxPanel, BorderLayout.SOUTH);
+        modifierPanel.setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
 
-        JLabel header = LabelFactory.createHeaderLabel("Prerequisites:");
-        header.setBorder(BorderFactory.createEmptyBorder(0, 11, 10, 10));
-
-        JTransparentPanel headerPanel = new JTransparentPanel();
-        headerPanel.add(header, BorderLayout.NORTH);
-
-        this.add(headerPanel, BorderLayout.WEST);
+        this.add(LabelFactory.createHeaderLabelNoSidePadding("Prerequisites to add or use this:"),
+                BorderLayout.NORTH);
         this.add(modifierPanel, BorderLayout.CENTER);
-        this.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+        this.setBorder(BorderFactory.createEmptyBorder(10, 15, 0, 5));
         prerequisiteForge.addObserver(this);
     }
 

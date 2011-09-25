@@ -28,6 +28,7 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
     private String canonicalName = "rpg.v4.client.gui.forge.modifier.ModifierPanel";
     private String diceCanonicalName = "rpg.v4.client.gui.forge.modifier.DiceModifierPanel";
     private JRoundedButton addDiceModifierButton;
+    private JLabel headerLabel;
 
     public ModifierForgePanel(ModifierForge modifierForge, String defaultModifier, String headerText)
     {
@@ -67,7 +68,8 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
 
         createModifierRow(false);
 
-        this.add(LabelFactory.createHeaderLabelNoSidePadding(headerText), BorderLayout.NORTH);
+        headerLabel = LabelFactory.createHeaderLabelNoSidePadding(headerText);
+        this.add(headerLabel, BorderLayout.NORTH);
         this.add(modifierPanel, BorderLayout.CENTER);
         this.setBorder(BorderFactory.createEmptyBorder(10, 15, 0, 5));
         modifierForge.addObserver(this);
@@ -184,5 +186,10 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
 
     public void mouseExited(MouseEvent e)
     {
+    }
+
+    public void setHeader(String headerText)
+    {
+        headerLabel.setText(headerText);
     }
 }
