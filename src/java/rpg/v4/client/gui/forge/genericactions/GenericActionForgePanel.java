@@ -31,6 +31,9 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
     protected JCheckBox disallowDiceRollsBox;
     protected ModifierForge hitModifiersForge, missModifiersForge;
     protected PrerequisiteForge prerequisiteForge;
+    protected PrerequisiteForgePanel prerequisiteForgePanel;
+    protected ModifierForgePanel missModifierPanel;
+    protected ModifierForgePanel hitModifierPanel;
 
 
     public GenericActionForgePanel(ObservableArrayList<String> itemList, String defaultModifierType, String headerName)
@@ -39,15 +42,15 @@ public abstract class GenericActionForgePanel extends AbstractForgePanel
         v4GenericAction = ClientProxyKit.CLIENT_PROXY.createGenericAction();
 
         hitModifiersForge = new ModifierForge();
-        ModifierForgePanel hitModifierPanel = new ModifierForgePanel(hitModifiersForge, defaultModifierType, "On success:");
+        hitModifierPanel = new ModifierForgePanel(hitModifiersForge, defaultModifierType, "On success:");
         hitModifiersForge.setModifierList(v4GenericAction.getHitModifiers().getV4Modifier());
 
         missModifiersForge = new ModifierForge();
-        ModifierForgePanel missModifierPanel = new ModifierForgePanel(missModifiersForge, defaultModifierType, "On failure:");
+        missModifierPanel = new ModifierForgePanel(missModifiersForge, defaultModifierType, "On failure:");
         missModifiersForge.setModifierList(v4GenericAction.getMissModifiers().getV4Modifier());
 
         prerequisiteForge = new PrerequisiteForge();
-        PrerequisiteForgePanel prerequisiteForgePanel = new PrerequisiteForgePanel(prerequisiteForge);
+        prerequisiteForgePanel = new PrerequisiteForgePanel(prerequisiteForge);
 
         modifierForgesListBox.add(prerequisiteForgePanel);
         modifierForgesListBox.add(hitModifierPanel);

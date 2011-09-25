@@ -26,6 +26,8 @@ public class FeatForgePanel extends GenericActionForgePanel
     {
 
         String[] type = {"Feat"};
+        missModifierPanel.setVisible(false);
+        hitModifierPanel.setHeader("Modifiers to apply when applicable, either when selected or when condition is met:");
 
         typePicker = new StringPicker(type);
         subTypePicker = new StringPicker("n/a");
@@ -38,28 +40,10 @@ public class FeatForgePanel extends GenericActionForgePanel
         targetPicker = new StringPicker(PickerConstants.TARGET_OPTIONS);
 
         addEntryPair("Type", typePicker);
-        //addEntryPair("Sub type", subTypePicker);
-        //addEntryPair("Source", sourcePicker);
-        //addEntryPair("Damage type", damageTypePicker);
-        //addEntryPair("Effect type", effectTypePicker);
-        //addEntryPair("Action type", actionTypePicker);
-        //addEntryPair("Attack type", attackTypePicker);
-        //addEntryPair("Secondary attack type", secondaryAttackTypePicker);
-        //addEntryPair("Target", targetPicker);
 
         attackingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
         defendingStatePicker = new StringPicker(ClientProxyKit.CLIENT_PROXY.getAvailableTargetableStates());
-        JLabel vsLabel = LabelFactory.createHeaderLabel("   vs.   ");
-        Box hBox = Box.createHorizontalBox();
-        hBox.add(attackingStatePicker);
-        hBox.add(vsLabel);
-        hBox.add(defendingStatePicker);
-        JTransparentPanel p = new JTransparentPanel();
-        p.add(hBox, BorderLayout.WEST);
-        //addEntryPair("Check", p);
-
         disallowDiceRollsBox = HudWidgetFactory.createHudCheckBox("");
-        //addEntryPair("Disallow dice roll", disallowDiceRollsBox);
     }
 
     @Override
