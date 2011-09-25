@@ -29,11 +29,6 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
     private String diceCanonicalName = "rpg.v4.client.gui.forge.modifier.DiceModifierPanel";
     private JRoundedButton addDiceModifierButton;
 
-    public ModifierForgePanel(ModifierForge modifierForge, String defaultModifier)
-    {
-        this(modifierForge, defaultModifier, "Modifers:");
-    }
-
     public ModifierForgePanel(ModifierForge modifierForge, String defaultModifier, String headerText)
     {
         this.modifierForge = modifierForge;
@@ -68,18 +63,13 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
         JTransparentPanel modifierPanel = new JTransparentPanel();
         modifierPanel.add(buttonPanel, BorderLayout.NORTH);
         modifierPanel.add(verticalBoxPanel, BorderLayout.SOUTH);
-
-        JLabel header = LabelFactory.createHeaderLabel(headerText);
-        header.setBorder(BorderFactory.createEmptyBorder(0, 11, 10, 10));
-
-        JTransparentPanel headerPanel = new JTransparentPanel();
-        headerPanel.add(header, BorderLayout.NORTH);
+        modifierPanel.setBorder(BorderFactory.createEmptyBorder(0, 15, 0, 0));
 
         createModifierRow(false);
 
-        this.add(headerPanel, BorderLayout.WEST);
+        this.add(LabelFactory.createHeaderLabelNoSidePadding(headerText), BorderLayout.NORTH);
         this.add(modifierPanel, BorderLayout.CENTER);
-        this.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+        this.setBorder(BorderFactory.createEmptyBorder(10, 15, 0, 5));
         modifierForge.addObserver(this);
     }
 
@@ -99,7 +89,7 @@ public class ModifierForgePanel extends JTransparentPanel implements MouseListen
 
     private void createModifierRow(boolean includeDice)
     {
-        V4Modifier modifier = modifierForge.createModifer(includeDice);
+        V4Modifier modifier = modifierForge.createModifier(includeDice);
         modifier.setV4ModifierType(defaultModifier);
         modifier.setSourceID(defaultModifier);
 

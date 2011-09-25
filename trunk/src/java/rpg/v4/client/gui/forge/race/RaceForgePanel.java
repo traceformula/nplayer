@@ -23,15 +23,17 @@ public class RaceForgePanel extends AbstractForgePanel
 
     public RaceForgePanel()
     {
-        super(ClientProxyKit.CLIENT_PROXY.getAvailableRaces(), "Racial", "Race");
+        super(ClientProxyKit.CLIENT_PROXY.getAvailableRaces(), "Racial", "Race", true, false);
         race = ClientProxyKit.CLIENT_PROXY.createRace();
-        modifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
 
+        generalEntryListBox.setLayout(new BoxLayout(generalEntryListBox, BoxLayout.Y_AXIS));
         bodyPartListingsBox = Box.createVerticalBox();
         JTransparentPanel bodyPanel = new JTransparentPanel();
         bodyPanel.add(bodyPartListingsBox, BorderLayout.NORTH);
         addEntryPair("Equipment slots", bodyPanel);
         displayBodyParts(race.getV4BodyPart());
+
     }
 
     public void actionPerformed(ActionEvent e)
@@ -62,7 +64,7 @@ public class RaceForgePanel extends AbstractForgePanel
         race = ClientProxyKit.CLIENT_PROXY.createRace();
         race.setName("");
         nameTextField.setText("");
-        modifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
         super.actionPerformed(null);
     }
 
@@ -73,7 +75,7 @@ public class RaceForgePanel extends AbstractForgePanel
         // Clone it to avoid wrong saving upon name change.
         this.race = (V4Race) FastDeepCopy.deepCopy(raceToLoad);
         nameTextField.setText(race.getName());
-        modifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(race.getV4ModifierList().getV4Modifier());
 
         bodyPartListingsBox.removeAll();
         List<V4BodyPart> bodyPartList = raceToLoad.getV4BodyPart();

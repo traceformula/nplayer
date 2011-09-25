@@ -19,9 +19,9 @@ public class ClassForgePanel extends AbstractForgePanel
 
     public ClassForgePanel()
     {
-        super(ClientProxyKit.CLIENT_PROXY.getAllAvailableClasses(), "Untyped", "Class");
+        super(ClientProxyKit.CLIENT_PROXY.getAllAvailableClasses(), "Untyped", "Class", true, false);
         characterClass = ClientProxyKit.CLIENT_PROXY.createClass();
-        modifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
         initialize();
     }
 
@@ -37,7 +37,7 @@ public class ClassForgePanel extends AbstractForgePanel
         characterClass = ClientProxyKit.CLIENT_PROXY.getCharacterClass(name);
         nameTextField.setText(characterClass.getName());
         paragonPath.setSelected(characterClass.isParagonPath());
-        modifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
     }
 
     protected void setNewName(String s)
@@ -74,7 +74,7 @@ public class ClassForgePanel extends AbstractForgePanel
         characterClass = ClientProxyKit.CLIENT_PROXY.createClass();
         characterClass.setName("");
         nameTextField.setText("");
-        modifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(characterClass.getV4ModifierList().getV4Modifier());
         super.actionPerformed(null);
     }
 }

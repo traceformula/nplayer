@@ -24,23 +24,22 @@ import java.awt.event.ActionEvent;
  */
 public abstract class AbstractForgePanel extends JTransparentPanel implements ActionListener, SidePanelAssociate, DocumentListener
 {
-    protected ModifierForge modifierForge;
+    protected ModifierForge ownerModifierForge, targetModifierForge;
     protected JTextField nameTextField;
-    protected Box generalEntryListBox, modifierForgesListBox;
+    protected Box modifierForgesListBox;
+    protected JPanel generalEntryListBox;
     protected Boolean caterForWeapons = false;
 
-    public AbstractForgePanel(ObservableArrayList<String> itemList, String defaultModifierType, String headerName)
-    {
-        this(itemList, defaultModifierType, headerName, true);
-    }
-
-    public AbstractForgePanel(ObservableArrayList<String> itemList, String defaultModifierType, String headerName, boolean useModifierForge)
+    public AbstractForgePanel(ObservableArrayList<String> itemList, String defaultModifierType,
+                              String headerName, boolean useOwnModifierForge, boolean useTargetModifierForge)
     {
         nameTextField = LabelFactory.createTextFieldWide("");
         nameTextField.getDocument().addDocumentListener(this);
         nameTextField.setColumns(20);
 
-        generalEntryListBox = Box.createVerticalBox();
+        GridLayout experimentLayout = new GridLayout(0,2, 25, 0);
+        generalEntryListBox = new JTransparentPanel();
+        generalEntryListBox.setLayout(experimentLayout);
         generalEntryListBox.setBorder(BorderFactory.createEmptyBorder(5, 10, 10, 10));
 
         modifierForgesListBox = Box.createVerticalBox();
@@ -57,12 +56,24 @@ public abstract class AbstractForgePanel extends JTransparentPanel implements Ac
         contentPanel.add(modifierForgesListBox, BorderLayout.CENTER);
 
         caterForWeapons = headerName.equals("Weapon");
-        if (useModifierForge)
+        if (useOwnModifierForge)
         {
-            modifierForge = new ModifierForge();
-            modifierForge.setCaterForWeapons(caterForWeapons);
-            ModifierForgePanel modifierForgePanel = new ModifierForgePanel(modifierForge, defaultModifierType);
-            modifierForgesListBox.add(modifierForgePanel);
+            ownerModifierForge = new ModifierForge();
+            ownerModifierForge.setCaterForWeapons(caterForWeapons);
+            ModifierForgePanel ownerModifierForgePanel =
+                    new ModifierForgePanel(ownerModifierForge, defaultModifierType,
+                            "Modifiers applied to owner when used or equipped:");
+            modifierForgesListBox.add(ownerModifierForgePanel);
+        }
+
+        if (useTargetModifierForge)
+        {
+            targetModifierForge = new ModifierForge();
+            ModifierForgePanel targetModifierForgePanel =
+                    new ModifierForgePanel(targetModifierForge, defaultModifierType,
+                            "Modifiers applied to target in addition to normal damage :");
+
+            modifierForgesListBox.add(targetModifierForgePanel);
         }
 
         JButton button = new JRoundedButton("Save", this);

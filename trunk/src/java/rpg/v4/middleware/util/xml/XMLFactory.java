@@ -123,6 +123,11 @@ public class XMLFactory
 
         V4ModifierList modList = factory.createV4ModifierList();
         weapon.setV4ModifierList(modList);
+
+        V4Weapon.AdditionalHitModifiers addHitMods = factory.createV4WeaponAdditionalHitModifiers();
+        addHitMods.setV4ModifierList(factory.createV4ModifierList());
+        weapon.setAdditionalHitModifiers(addHitMods);
+
         return weapon;
     }
 

@@ -35,9 +35,10 @@ public class WeaponForgePanel extends AbstractForgePanel
 
     public WeaponForgePanel()
     {
-        super(ClientProxyKit.CLIENT_PROXY.getAvailableWeapons(), "Item", "Weapon");
+        super(ClientProxyKit.CLIENT_PROXY.getAvailableWeapons(), "Item", "Weapon", true, true);
         weapon = ClientProxyKit.CLIENT_PROXY.createWeapon();
-        modifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        targetModifierForge.setModifierList(weapon.getAdditionalHitModifiers().getV4ModifierList().getV4Modifier());
         initialize();
     }
 
@@ -67,7 +68,8 @@ public class WeaponForgePanel extends AbstractForgePanel
         nameTextField.setText("");
         weightTextField.setText("");
         priceTextField.setText("");
-        modifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        targetModifierForge.setModifierList(weapon.getAdditionalHitModifiers().getV4ModifierList().getV4Modifier());
         super.actionPerformed(null);
     }
 
@@ -94,7 +96,7 @@ public class WeaponForgePanel extends AbstractForgePanel
         weapon.setHandRequirement(Integer.valueOf(numOfHandsPicker.getText()));
 
         // If adding modifier to this weapons DYNAMIC_BAB, update the DYNAMIC_BAB to this weapons name
-        for (V4Modifier modifier : modifierForge.getModifierList())
+        for (V4Modifier modifier : ownerModifierForge.getModifierList())
         {
             if (modifier.getTargetID().equals(StateIDs.THIS_WEAPON_BAB.toString()))
             {
@@ -136,7 +138,8 @@ public class WeaponForgePanel extends AbstractForgePanel
             }
         }
 
-        modifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        ownerModifierForge.setModifierList(weapon.getV4ModifierList().getV4Modifier());
+        targetModifierForge.setModifierList(weapon.getAdditionalHitModifiers().getV4ModifierList().getV4Modifier());
     }
 
     @Override
@@ -157,23 +160,20 @@ public class WeaponForgePanel extends AbstractForgePanel
         baseWeaponPicker = new StringPicker(choosableBases);
         addEntryPair("Base weapon", baseWeaponPicker);
 
-        damageNumDicePicker = new IntegerPicker(1, 5);
-        addEntryPair("Damage dice (number of)", damageNumDicePicker);
-
-        Integer[] dieList = new Integer[]{4, 6, 8, 10, 12, 20};
-        damageDiePicker = new IntegerPicker(Arrays.asList(dieList));
-        addEntryPair("Damage die (d4, d6, etc)", damageDiePicker);
-
-        proficiencyBonusPicker = new IntegerPicker(0, 5);
-        addEntryPair("Proficiency bonus", proficiencyBonusPicker);
-
         priceTextField = LabelFactory.createTextFieldWide("", true);
         priceTextField.setColumns(6);
         addEntryPair("Price in gp", priceTextField);
 
+        damageNumDicePicker = new IntegerPicker(1, 5);
+        addEntryPair("Damage dice (number of)", damageNumDicePicker);
+
         weightTextField = LabelFactory.createTextFieldWide("");
-        weightTextField.setColumns(10);
+        weightTextField.setColumns(6);
         addEntryPair("Weight", weightTextField);
+
+        Integer[] dieList = new Integer[]{4, 6, 8, 10, 12, 20};
+        damageDiePicker = new IntegerPicker(Arrays.asList(dieList));
+        addEntryPair("Damage die (d4, d6, etc)", damageDiePicker);
 
         groupPicker = new StringPicker("Axe",
                 "Bow",
@@ -192,13 +192,17 @@ public class WeaponForgePanel extends AbstractForgePanel
         );
         addEntryPair("Group", groupPicker);
 
+        proficiencyBonusPicker = new IntegerPicker(0, 5);
+        addEntryPair("Proficiency bonus", proficiencyBonusPicker);
+
         typePicker = new StringPicker("Melee", "Ranged");
         addEntryPair("Type", typePicker);
+
+        numOfHandsPicker = new IntegerPicker(1, 2);
+        addEntryPair("Number of hands required", numOfHandsPicker);
 
         categoryPicker = new StringPicker("Simple", "Military", "Superior");
         addEntryPair("Category", categoryPicker);
 
-        numOfHandsPicker = new IntegerPicker(1, 2);
-        addEntryPair("Number of hands required", numOfHandsPicker);
     }
 }
